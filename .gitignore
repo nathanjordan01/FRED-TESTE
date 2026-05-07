@@ -1,24 +1,9 @@
-# Dependencies
 node_modules/
-SaaS/node_modules/
-
-# Next.js build
 .next/
-SaaS/.next/
-SaaS/out/
-
-# Environment and Secrets
 .env*
-SaaS/.env*.local
-
-# Heavy Assets (Keep on Drive/Local)
 PDF/
 Whatsapp\ Image/
-extracted_*.txt
-
-# Logs and Misc
 *.log
 .DS_Store
 tmp/
 scratch/
-
