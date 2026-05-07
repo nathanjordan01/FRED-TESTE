@@ -1,9 +1,35 @@
+# Dependências
 node_modules/
 .next/
+out/
+build/
+
+# Ambiente e Segredos
 .env*
+*.local
+gh-token.txt
+
+# Dados Pesados (NÃO enviar ao GitHub)
 PDF/
 Whatsapp\ Image/
+public/data/*.csv
+
+# Pastas de Rascunho e Lixo (Limpeza da Auditoria)
+SaaS/scratch/
+automation/
+database/
+docs/
+n8n-workflow/
+workflow/
+SaaS/src/lib/scoring_logic_mock_*
+SaaS/src/lib/scoring_debug.js
+
+# Logs e Temporários
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 .DS_Store
 tmp/
 scratch/
+extracted_*.txt

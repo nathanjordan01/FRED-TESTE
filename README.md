@@ -4,10 +4,11 @@ Sistema de extração automatizada de dados técnicos da Dynar usando IA (Gemini
 
 ## 🏗️ Estrutura do Projeto
 
-- `/SaaS`: Aplicação Next.js (Fred IA) com motor de busca otimizado para 53k produtos.
-- `Dynar_PDF_Extractor_v3.json`: Workflow do n8n para extração de PDFs.
-- `schema.sql`: Estrutura do Banco de Dados PostgreSQL.
-- `seed_conhecimento.sql`: Base de conhecimento técnico inicial.
+- `/SaaS`: Aplicação Next.js (Fred IA).
+- `Dynar_PDF_Extractor_v3.json`: Workflow do n8n.
+- `schema.sql`: Estrutura do Banco de Dados.
+- `seed_conhecimento.sql`: Base de conhecimento técnico.
+- `seed_conhecimento.sql`: Script de carga inicial.
 
 ## 🚀 Como Rodar o Projeto
 
