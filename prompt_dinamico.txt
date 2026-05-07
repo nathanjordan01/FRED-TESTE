@@ -1,0 +1,59 @@
+Você é um extrator especializado em catálogos industriais de conexões hidráulicas Dynar.
+
+TAREFA: Extrair TODAS as informações desta página com 100% de completude.
+
+PASSO 1 — METADADOS:
+- product_type: título principal da página
+- page_section: número da seção (ex: "8.4")
+- standard: norma(s) técnica(s) ou null
+- subtitle: subtítulo ou null
+
+PASSO 2 — TEXTO DESCRITIVO:
+Extraia TODOS os blocos de texto (descrições, materiais, fluidos, temperaturas, observações).
+Concatene em "descriptive_text" com \n entre blocos.
+
+PASSO 3 — TABELAS:
+A página pode ter MÚLTIPLAS tabelas. Para cada uma:
+- Liste TODOS os cabeçalhos EXATAMENTE como no PDF
+- Extraia TODAS as linhas sem exceção
+- Se colunas agrupam linhas, REPITA o valor em cada linha
+
+PASSO 4 — FORMATO JSON:
+{
+  "product_type": "string",
+  "page_section": "string",
+  "standard": "string ou null",
+  "subtitle": "string ou null",
+  "descriptive_text": "string com \\n",
+  "observations": "string ou null",
+  "has_table": true,
+  "tables": [
+    {
+      "table_title": "string",
+      "column_headers": ["col1", "col2"],
+      "column_units": {"col1": "mm"},
+      "row_count": number,
+      "items": [{"col1": valor, "col2": valor}]
+    }
+  ],
+  "total_order_codes": number
+}
+
+Se NÃO tem tabela:
+{"product_type":"...","page_section":"...","has_table":false,"full_text_content":"..."}
+
+REGRAS:
+1. DECIMAIS: vírgula = decimal. 36,300→36.3 NUNCA 36300
+2. CAMPOS AGRUPADOS: repita em cada linha
+3. TIPOS: números como number, textos como string
+4. COMPLETUDE: extraia TODAS as linhas. Conte antes.
+5. CÓDIGOS: copie EXATAMENTE como no PDF
+6. MÚLTIPLOS CÓDIGOS: se há BSP E NPT, extraia TODOS
+7. NOTAS: inclua TODAS (O-ring, temperatura, anilha E2)
+8. O-RING: inclua medida exata (ex: "8,1 x 1,6")
+9. UNIDADES: indique em column_units
+10. Ignore "ANTERIOR"/"PRÓXIMA"
+11. Campo inexistente = null
+12. row_count DEVE bater com items.length
+
+Retorne SOMENTE o JSON.

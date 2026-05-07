@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/* 🚀 CONFIGURAÇÃO DE TEMA (Conforme documentação v4) */
+@theme {
+  --color-brand-emerald: #10b981;
+  --color-brand-emerald-dark: #059669;
+  
+  /* Tokens de Sistema - Usando nomes padrão para evitar conflito */
+  --background: #ffffff;
+  --foreground: #171717;
+  --card: #ffffff;
+  --card-border: #f2f2f2;
+  --logo-green: #00c07e;
+}
+
+/* ⚡ VARIANTE DARK (Estratégia de Classe) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 🏛️ CAMADA DE BASE: Resets e Inversão de Variáveis */
+@layer base {
+  .dark {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --card: #141414;
+    --card-border: #262626;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--background);
+    color: var(--foreground);
+    transition: background-color 0.4s ease, color 0.4s ease;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  * {
+    border-color: var(--card-border);
+  }
+}
+
+/* 🌀 CAMADA DE UTILITÁRIOS: Animações Organizadas */
+@layer utilities {
+  @keyframes logo-fall {
+    0% { transform: translateY(0) rotate(0); }
+    25% { transform: translateY(20px) rotate(12deg); }
+    50% { transform: translateY(16px) rotate(8deg); }
+    75% { transform: translateY(20px) rotate(10deg); }
+    100% { transform: translateY(20px) rotate(10deg); }
+  }
+
+  @keyframes logo-shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    75% { transform: translateX(2px); }
+  }
+
+  .animate-logo-fall {
+    animation: logo-fall 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .animate-logo-shake {
+    animation: logo-shake 0.1s infinite;
+  }
+}

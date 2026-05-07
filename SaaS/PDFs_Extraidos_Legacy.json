@@ -1,0 +1,2538 @@
+[
+  {
+    "arquivo": "1-tracado-de-fio-textil.pdf",
+    "codigos_encontrados": []
+  },
+  {
+    "arquivo": "1-trama-de-aco.pdf",
+    "codigos_encontrados": [
+      "SAE"
+    ]
+  },
+  {
+    "arquivo": "1-trama-de-fio-textil.pdf",
+    "codigos_encontrados": [
+      "SAE"
+    ]
+  },
+  {
+    "arquivo": "12-trancados-de-fios-de-aco.pdf",
+    "codigos_encontrados": [
+      "SAE"
+    ]
+  },
+  {
+    "arquivo": "2-tramas-de-aco.pdf",
+    "codigos_encontrados": [
+      "SAE"
+    ]
+  },
+  {
+    "arquivo": "2-tramas-de-fio-textil.pdf",
+    "codigos_encontrados": [
+      "SAE"
+    ]
+  },
+  {
+    "arquivo": "4-espirais-de-aco-4sp.pdf",
+    "codigos_encontrados": [
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "4-espirais-de-aco.pdf",
+    "codigos_encontrados": [
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "4-espirais-de-feio-de-aco.pdf",
+    "codigos_encontrados": [
+      "SAE"
+    ]
+  },
+  {
+    "arquivo": "6-esperais-de-aco.pdf",
+    "codigos_encontrados": [
+      "SAE"
+    ]
+  },
+  {
+    "arquivo": "adaptador-boleado-jic-37-graus.pdf",
+    "codigos_encontrados": [
+      "JIC",
+      "AJUMB"
+    ]
+  },
+  {
+    "arquivo": "adaptador-bujao.pdf",
+    "codigos_encontrados": [
+      "BSP",
+      "AASF"
+    ]
+  },
+  {
+    "arquivo": "adaptador-macho-com-porca-giratoria-bsp.pdf",
+    "codigos_encontrados": [
+      "AEAMB",
+      "BSP",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "adaptador-macho-com-porca-giratoria.pdf",
+    "codigos_encontrados": [
+      "AEAMB",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "adaptador-macho-de-reducao-com-porca-giratoria.pdf",
+    "codigos_encontrados": [
+      "AEAMRTB",
+      "XIMA",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "adaptador-macho-roscado.pdf",
+    "codigos_encontrados": [
+      "AAMFT",
+      "BSP",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "adaptador-para-flange-rosca-metrica-3000-psi-iso-6162-1.pdf",
+    "codigos_encontrados": [
+      "TRICA",
+      "UNC",
+      "ISO",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "adaptador-para-flange-rosca-metrica-6000-psi-iso-6162-2.pdf",
+    "codigos_encontrados": [
+      "TRICA",
+      "UNC",
+      "ISO",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "adaptador-para-flange-rosca-unc-3000-psi-sae-j518.pdf",
+    "codigos_encontrados": [
+      "UNC",
+      "SAE",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "adaptador-para-flange-unc-rosca-unc-6000-psi-sae-j518.pdf",
+    "codigos_encontrados": [
+      "UNC",
+      "SAE",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "adaptador-para-solda.pdf",
+    "codigos_encontrados": [
+      "BSP",
+      "AASF"
+    ]
+  },
+  {
+    "arquivo": "adaptador-para-tubo-boleado.pdf",
+    "codigos_encontrados": [
+      "AEATB",
+      "DIN",
+      "XIMA",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "adaptador-reto-macho-x-femea.pdf",
+    "codigos_encontrados": [
+      "BSPT",
+      "AFF",
+      "UNF",
+      "TRICA",
+      "NPT",
+      "AMM",
+      "AMF"
+    ]
+  },
+  {
+    "arquivo": "adaptores-roscados-para-conexoes-de-medicao.pdf",
+    "codigos_encontrados": []
+  },
+  {
+    "arquivo": "anilha-de-dupla-cravacao-e.pdf",
+    "codigos_encontrados": [
+      "DIN",
+      "ISO",
+      "DYNAR"
+    ]
+  },
+  {
+    "arquivo": "anilha-de-simples-cravacao.pdf",
+    "codigos_encontrados": [
+      "DIN",
+      "ISO"
+    ]
+  },
+  {
+    "arquivo": "anilha-e2-de-tripla-cravacao-dinova.pdf",
+    "codigos_encontrados": [
+      "DYNAR",
+      "DIN",
+      "ISO"
+    ]
+  },
+  {
+    "arquivo": "anilha-e2.pdf",
+    "codigos_encontrados": [
+      "PTFE"
+    ]
+  },
+  {
+    "arquivo": "anilha-jic-37-graus.pdf",
+    "codigos_encontrados": [
+      "JIC",
+      "AJA",
+      "AJOB"
+    ]
+  },
+  {
+    "arquivo": "anilhas.pdf",
+    "codigos_encontrados": [
+      "ISO",
+      "AEP",
+      "AEA",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "bracadeira-dupla.pdf",
+    "codigos_encontrados": [
+      "TBRDPA",
+      "TRBDPA",
+      "TBRDPI",
+      "TRBDPI",
+      "TBRDBA",
+      "TRBDBA",
+      "TBRDBI",
+      "TRBDBI"
+    ]
+  },
+  {
+    "arquivo": "bracadeira-simples.pdf",
+    "codigos_encontrados": [
+      "TBRPA",
+      "TRBPA",
+      "TBRPI",
+      "TRBPI",
+      "TBRBA",
+      "TRBBA",
+      "TBRBI",
+      "TRBBI"
+    ]
+  },
+  {
+    "arquivo": "bujao-cabeca-sextavada.pdf",
+    "codigos_encontrados": [
+      "BSP",
+      "ABJ",
+      "BSPT",
+      "UNF",
+      "TRICA",
+      "NPT",
+      "ABSI"
+    ]
+  },
+  {
+    "arquivo": "bujao-para-tubo-jic-37-graus.pdf",
+    "codigos_encontrados": [
+      "AJP",
+      "JIC",
+      "AJOT"
+    ]
+  },
+  {
+    "arquivo": "bujao-roscado-com-o-ring.pdf",
+    "codigos_encontrados": [
+      "BSP",
+      "AASF"
+    ]
+  },
+  {
+    "arquivo": "bujao-sextavado-interno.pdf",
+    "codigos_encontrados": [
+      "AABSI",
+      "BSP",
+      "XIMA",
+      "NPT",
+      "ABSI",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "calculo-das-tubulacoes.pdf",
+    "codigos_encontrados": []
+  },
+  {
+    "arquivo": "calculo-para-a-tubulacao.pdf",
+    "codigos_encontrados": []
+  },
+  {
+    "arquivo": "caracteristicas-da-mangueira-montada.pdf",
+    "codigos_encontrados": [
+      "RABALHO",
+      "FLUIDO",
+      "MBIENTE",
+      "XTREMAS",
+      "FLUIDOS",
+      "GUEIRAS"
+    ]
+  },
+  {
+    "arquivo": "caracteristicas-principais.pdf",
+    "codigos_encontrados": [
+      "AEVAR"
+    ]
+  },
+  {
+    "arquivo": "catalogo-geral-dynar.pdf",
+    "codigos_encontrados": [
+      "DIN",
+      "JIC",
+      "JHIC",
+      "SAE",
+      "DKO",
+      "ORFS",
+      "TERLOCK",
+      "AAAF",
+      "AAAM",
+      "AABJ",
+      "AABJO",
+      "AABSI",
+      "AACF",
+      "AAFF",
+      "AAJF",
+      "AAJMF",
+      "AAMF",
+      "AAMFO",
+      "AAMFT",
+      "AAMM",
+      "AASF",
+      "AATF",
+      "ADE",
+      "ADM",
+      "ADS",
+      "AEA",
+      "AEAMB",
+      "AEAMRTB",
+      "AEAS",
+      "AEATB",
+      "AECI",
+      "AECP",
+      "AEDUF",
+      "AEJB",
+      "AEJC",
+      "AEJCF",
+      "AEJCFR",
+      "AEJCP",
+      "AEJFG",
+      "AEJFRS",
+      "AEJFS",
+      "AEJI",
+      "AEJM",
+      "AEJMO",
+      "AEJS",
+      "AEOB",
+      "AEOT",
+      "AEP",
+      "AETB",
+      "AETCP",
+      "AETI",
+      "AETIR",
+      "AETM",
+      "AETMO",
+      "AETP",
+      "AETPB",
+      "AETPC",
+      "AETPE",
+      "AETPEB",
+      "AETV",
+      "AETVB",
+      "AETVCP",
+      "AETVO",
+      "AEUB",
+      "AEUBR",
+      "AEUC",
+      "AEUCF",
+      "AEUCFR",
+      "AEUD",
+      "AEUDR",
+      "AEUDS",
+      "AEUF",
+      "AEUFE",
+      "AEUFG",
+      "AEUFJ",
+      "AEUFJB",
+      "AEUFRS",
+      "AEUFS",
+      "AEUM",
+      "AEUMO",
+      "AEUO",
+      "AEUOD",
+      "AEUS",
+      "AEUTP",
+      "AEUTPE",
+      "AEUTPS",
+      "AEVAR",
+      "AEVE",
+      "AEVEF",
+      "AJA",
+      "AJAMB",
+      "AJCI",
+      "AJJB",
+      "AJJC",
+      "AJJCP",
+      "AJJF",
+      "AJJI",
+      "AJJM",
+      "AJJS",
+      "AJOB",
+      "AJOT",
+      "AJP",
+      "AJTB",
+      "AJTCC",
+      "AJTCV",
+      "AJTI",
+      "AJTM",
+      "AJTMO",
+      "AJTV",
+      "AJTVB",
+      "AJTVO",
+      "AJUC",
+      "AJUD",
+      "AJUF",
+      "AJUM",
+      "AJUMB",
+      "AJUS",
+      "ASV",
+      "FFOP",
+      "FFORP",
+      "CDMAN",
+      "CFS",
+      "CFSR",
+      "CRSH",
+      "DSF",
+      "ERAGF",
+      "ERAGM",
+      "ERF",
+      "ERFPF",
+      "ERFPM",
+      "ERM",
+      "FACT",
+      "FACTR",
+      "FAFFO",
+      "FAFFOR",
+      "FAFRO",
+      "FAFROR",
+      "FAFTO",
+      "FAFTOR",
+      "FSOP",
+      "FSORP",
+      "JAT",
+      "JKM",
+      "MAN",
+      "MEP",
+      "PEM",
+      "PFPM",
+      "PJM",
+      "PKJM",
+      "PKMB",
+      "PKMN",
+      "PKMBT",
+      "PKT",
+      "PMB",
+      "PMN",
+      "RBV",
+      "TBR",
+      "TBRD",
+      "TCB",
+      "TCV",
+      "TPE",
+      "VEIS",
+      "CIE",
+      "ROSCAS",
+      "TUBOS",
+      "OSCADOS",
+      "PEDIDOS",
+      "SIMPLES",
+      "SOLDAR",
+      "SITIVOS",
+      "PERADOS",
+      "CNICAS",
+      "CURVOS",
+      "MONTADA",
+      "ONTAGEM",
+      "FLUIDOS",
+      "ONENTES",
+      "RADORES",
+      "APORCAS",
+      "FINAS",
+      "RINGS",
+      "JUNTAS",
+      "MACIAS",
+      "APOIO",
+      "RTANTES",
+      "COBRE",
+      "XAEUM",
+      "XAEUMO",
+      "XAEUD",
+      "XAEJM",
+      "XAEJI",
+      "XAETM",
+      "XAETI",
+      "XAEUS",
+      "XAEUC",
+      "XAEJC",
+      "XAEUDS",
+      "XAETV",
+      "XAEJB",
+      "XAETB",
+      "XAETVB",
+      "XAEAMB",
+      "XAEATB",
+      "XAECI",
+      "ISO",
+      "NBR",
+      "NPT",
+      "BSP",
+      "BSPT",
+      "UNF",
+      "TRICA",
+      "DIS",
+      "LLLS",
+      "DYNAR",
+      "PTFE",
+      "BELLZET",
+      "PBM",
+      "BCDE",
+      "BCD",
+      "NPTF",
+      "LISA",
+      "AAF",
+      "AAM",
+      "AFF",
+      "AMM",
+      "AMF",
+      "AJF",
+      "MEA",
+      "AJMF",
+      "ATF",
+      "ACF",
+      "ABJ",
+      "ABSI",
+      "FLANGE",
+      "AFLANGE",
+      "ADO",
+      "RING",
+      "PARA",
+      "TUBO",
+      "CHEDULE",
+      "UNC",
+      "CHM",
+      "AEUOSID",
+      "XIMA",
+      "PVC",
+      "NTERIOR",
+      "COSTURA",
+      "ROLOS",
+      "LIAMIDA",
+      "AISI",
+      "ETILENO",
+      "TBRPA",
+      "TRBPA",
+      "TBRPI",
+      "TRBPI",
+      "TBRBA",
+      "TRBBA",
+      "TBRBI",
+      "TRBBI",
+      "TBRDPA",
+      "TRBDPA",
+      "TBRDPI",
+      "TRBDPI",
+      "TBRDBA",
+      "TRBDBA",
+      "TBRDBI",
+      "TRBDBI",
+      "GLP",
+      "FLUIDO",
+      "MBIENTE",
+      "XTREMAS",
+      "GUEIRAS",
+      "RMINAIS",
+      "PKJ",
+      "BITOLA",
+      "NGUEIRA",
+      "MEDIDA",
+      "RIMENTO",
+      "NGULO",
+      "EXEMPLO"
+    ]
+  },
+  {
+    "arquivo": "catalogo-manual-roscas.pdf",
+    "codigos_encontrados": [
+      "SEDES",
+      "SAE",
+      "JIC",
+      "FLARE",
+      "TYPE",
+      "FITTING",
+      "SEAL",
+      "OBESEAL",
+      "DIN",
+      "INGLESA",
+      "BSPP",
+      "APONESA",
+      "KOMATSU",
+      "TRICA",
+      "RANCESA",
+      "RPILLAR",
+      "ISO",
+      "UADRADO",
+      "BOSS",
+      "RING",
+      "NPTF",
+      "BSPT",
+      "UNF",
+      "NPSM",
+      "KES"
+    ]
+  },
+  {
+    "arquivo": "catalogo-tubulacoes.pdf",
+    "codigos_encontrados": [
+      "DIN",
+      "BSI",
+      "ONTAGEM",
+      "DYNAR",
+      "NCIAS",
+      "GRANDE",
+      "PEQUENO",
+      "APERTO",
+      "FINAS",
+      "RMITIDO",
+      "NOMINAL",
+      "UAMENTE",
+      "BARBADO",
+      "ALTOS",
+      "NATIVAS",
+      "PRODUTO",
+      "UNF",
+      "TUBO",
+      "ISO",
+      "QUE",
+      "QUO",
+      "FIXADO",
+      "PIO",
+      "BSPP",
+      "NORMAS"
+    ]
+  },
+  {
+    "arquivo": "codificacao-da-mangueira-montada.pdf",
+    "codigos_encontrados": [
+      "PJM",
+      "PFPM",
+      "NPT",
+      "BSP",
+      "ORFS",
+      "RMINAIS",
+      "PKJ",
+      "PKJM",
+      "PKMB",
+      "PKMBT",
+      "PKMN",
+      "PKT",
+      "JIC",
+      "BSPT",
+      "DKO",
+      "BITOLA",
+      "NGUEIRA",
+      "MEDIDA",
+      "RIMENTO",
+      "NGULO",
+      "EXEMPLO"
+    ]
+  },
+  {
+    "arquivo": "compatibilidade-dos-fluidos.pdf",
+    "codigos_encontrados": [
+      "XIMA",
+      "GLP",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "comprimento-de-uma-mangueira-montada-com-terminais.pdf",
+    "codigos_encontrados": []
+  },
+  {
+    "arquivo": "cones-para-soldar-dynar.pdf",
+    "codigos_encontrados": [
+      "DIN",
+      "ISO"
+    ]
+  },
+  {
+    "arquivo": "conexao-joelho-com-flange-quadrado.pdf",
+    "codigos_encontrados": [
+      "AEUCF",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "conexao-reta-com-flange-quadrado.pdf",
+    "codigos_encontrados": [
+      "AEJFG",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "conexao-reta-com-flange-reforcado.pdf",
+    "codigos_encontrados": [
+      "AEUCFR",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "conexao-reta-para-solda.pdf",
+    "codigos_encontrados": [
+      "AEAS"
+    ]
+  },
+  {
+    "arquivo": "conexoes-para-medicao-com-acoplamento-de-encaixe.pdf",
+    "codigos_encontrados": [
+      "XIMA",
+      "AETPE",
+      "AEUFE",
+      "BSP",
+      "NPT",
+      "BSPT",
+      "DIN",
+      "AEUTPE",
+      "AETPEB",
+      "BELLZET",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "conexoes-para-medicao-com-acoplamento-roscado-m16-x-15-2.pdf",
+    "codigos_encontrados": [
+      "XIMA",
+      "BSP",
+      "NPT",
+      "UNF",
+      "DIN",
+      "ISO",
+      "AEUTP",
+      "AETPB",
+      "AETPC",
+      "AEDUF",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "conexoes-para-medicao-com-acoplamento-roscado-m16.pdf",
+    "codigos_encontrados": [
+      "XIMA",
+      "BSP",
+      "BSPT",
+      "NPT",
+      "UNF",
+      "AETP",
+      "DIN",
+      "ISO",
+      "AEUTP",
+      "AETPB",
+      "PBM",
+      "AETPC",
+      "CDMAN",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "conexoes-para-medicao-com-acoplamento-roscado-s12-x-15.pdf",
+    "codigos_encontrados": [
+      "XIMA",
+      "BSP",
+      "BSPT",
+      "NPT",
+      "DIN",
+      "AEUTPS",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "conexoes-para-medicoes-generalidades.pdf",
+    "codigos_encontrados": [
+      "DIN",
+      "XIMA",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "conexoes-reta-com-flange.pdf",
+    "codigos_encontrados": [
+      "AEUCF",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "contraflange-para-solda.pdf",
+    "codigos_encontrados": [
+      "CFS",
+      "AFLANGE",
+      "CFSR",
+      "ISO"
+    ]
+  },
+  {
+    "arquivo": "contraflange-x-tubo.pdf",
+    "codigos_encontrados": [
+      "ISO",
+      "FACT",
+      "AFLANGE",
+      "FACTR",
+      "TUBO",
+      "ADO",
+      "PARA"
+    ]
+  },
+  {
+    "arquivo": "contraporca-para-aeuc-e-aejc.pdf",
+    "codigos_encontrados": [
+      "AEJC",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "cruzeta-femea.pdf",
+    "codigos_encontrados": [
+      "BSP",
+      "AJF",
+      "NPT",
+      "MEA",
+      "AJMF",
+      "ATF",
+      "ACF"
+    ]
+  },
+  {
+    "arquivo": "de-3-viasfuro-l-ou-t.pdf",
+    "codigos_encontrados": [
+      "NPT",
+      "BSP"
+    ]
+  },
+  {
+    "arquivo": "dispositivo-para-curvar-tubos.pdf",
+    "codigos_encontrados": [
+      "RBV"
+    ]
+  },
+  {
+    "arquivo": "dispositivo-para-serrar-tubos.pdf",
+    "codigos_encontrados": [
+      "ASV"
+    ]
+  },
+  {
+    "arquivo": "emenda-para-mangueiras-pem.pdf",
+    "codigos_encontrados": [
+      "PEM"
+    ]
+  },
+  {
+    "arquivo": "emenda-pem.pdf",
+    "codigos_encontrados": [
+      "PEM"
+    ]
+  },
+  {
+    "arquivo": "explicacao-dos-codigos-para-pedidos.pdf",
+    "codigos_encontrados": [
+      "AEUM",
+      "AEAS",
+      "BSP",
+      "XAEUM",
+      "DYNAR"
+    ]
+  },
+  {
+    "arquivo": "face-plana-45-graus-interlock.pdf",
+    "codigos_encontrados": [
+      "TERLOCK"
+    ]
+  },
+  {
+    "arquivo": "face-plana-45-graus.pdf",
+    "codigos_encontrados": [
+      "ORFS"
+    ]
+  },
+  {
+    "arquivo": "face-plana-90-graus-interlock.pdf",
+    "codigos_encontrados": [
+      "TERLOCK"
+    ]
+  },
+  {
+    "arquivo": "face-plana-90-graus.pdf",
+    "codigos_encontrados": [
+      "ORFS"
+    ]
+  },
+  {
+    "arquivo": "face-plana-reto-interlock.pdf",
+    "codigos_encontrados": [
+      "TERLOCK"
+    ]
+  },
+  {
+    "arquivo": "face-plana-reto.pdf",
+    "codigos_encontrados": [
+      "ORFS"
+    ]
+  },
+  {
+    "arquivo": "femea-giratorio-45-graus-bsp-30-graus-interlock.pdf",
+    "codigos_encontrados": [
+      "BSP"
+    ]
+  },
+  {
+    "arquivo": "femea-giratorio-45-graus-bsp-30-graus.pdf",
+    "codigos_encontrados": [
+      "BSP"
+    ]
+  },
+  {
+    "arquivo": "femea-giratorio-45-graus-jic-37-graus-pkj45.pdf",
+    "codigos_encontrados": [
+      "JIC"
+    ]
+  },
+  {
+    "arquivo": "femea-giratorio-45-graus-jic-37-graus.pdf",
+    "codigos_encontrados": [
+      "JIC"
+    ]
+  },
+  {
+    "arquivo": "femea-giratorio-90-graus-bsp-30-graus-interlock (1).pdf",
+    "codigos_encontrados": [
+      "BSP"
+    ]
+  },
+  {
+    "arquivo": "femea-giratorio-90-graus-bsp-30-graus-interlock.pdf",
+    "codigos_encontrados": [
+      "BSP"
+    ]
+  },
+  {
+    "arquivo": "femea-giratorio-90-graus-bsp-30-graus.pdf",
+    "codigos_encontrados": [
+      "BSP"
+    ]
+  },
+  {
+    "arquivo": "femea-giratorio-90-graus-jic-37-graus-pkj90.pdf",
+    "codigos_encontrados": [
+      "JIC"
+    ]
+  },
+  {
+    "arquivo": "femea-giratorio-90-graus-jic-37-graus.pdf",
+    "codigos_encontrados": [
+      "JIC"
+    ]
+  },
+  {
+    "arquivo": "femea-giratorio-reto-bsp-30-graus-interlock.pdf",
+    "codigos_encontrados": [
+      "BSP"
+    ]
+  },
+  {
+    "arquivo": "femea-giratorio-reto-bsp-30-graus.pdf",
+    "codigos_encontrados": [
+      "BSP"
+    ]
+  },
+  {
+    "arquivo": "femea-giratorio-reto-jic-37-graus-1.pdf",
+    "codigos_encontrados": [
+      "JIC"
+    ]
+  },
+  {
+    "arquivo": "femea-giratorio-reto-jic-37-graus.pdf",
+    "codigos_encontrados": [
+      "JIC"
+    ]
+  },
+  {
+    "arquivo": "femea-x-femea.pdf",
+    "codigos_encontrados": [
+      "BSPT",
+      "AFF",
+      "UNF",
+      "TRICA",
+      "NPT",
+      "AMM",
+      "AMF"
+    ]
+  },
+  {
+    "arquivo": "fibra-kevlar-e-capa-em-poliuretano.pdf",
+    "codigos_encontrados": [
+      "SAE"
+    ]
+  },
+  {
+    "arquivo": "flange-45-graus-3000-psi-cod.61.pdf",
+    "codigos_encontrados": []
+  },
+  {
+    "arquivo": "flange-45-graus-6000-psi-cod.62.pdf",
+    "codigos_encontrados": []
+  },
+  {
+    "arquivo": "flange-45-graus-interlock-6000-psi-cod.62.pdf",
+    "codigos_encontrados": [
+      "TERLOCK"
+    ]
+  },
+  {
+    "arquivo": "flange-45-graus-supercat-6000-psi-cod.62.pdf",
+    "codigos_encontrados": []
+  },
+  {
+    "arquivo": "flange-90-graus-6000-psi-cod.62.pdf",
+    "codigos_encontrados": []
+  },
+  {
+    "arquivo": "flange-90-graus-interlock-6000-psi-cod.62.pdf",
+    "codigos_encontrados": [
+      "TERLOCK"
+    ]
+  },
+  {
+    "arquivo": "flange-90-graus-supercat-6000-psi-cod.62.pdf",
+    "codigos_encontrados": []
+  },
+  {
+    "arquivo": "flange-de-rosca-bsp-com-o-ring.pdf",
+    "codigos_encontrados": [
+      "BSP",
+      "FLANGE",
+      "ISO",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "flange-de-rosca-npt-com-o-ring.pdf",
+    "codigos_encontrados": [
+      "NPT",
+      "FLANGE",
+      "ISO",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "flange-interlock-45-graus-3000-psi-cod.61.pdf",
+    "codigos_encontrados": [
+      "TERLOCK"
+    ]
+  },
+  {
+    "arquivo": "flange-interlock-90-graus-3000-psi-cod.61.pdf",
+    "codigos_encontrados": [
+      "TERLOCK"
+    ]
+  },
+  {
+    "arquivo": "flange-interlock-reto-3000-psi-cod.61.pdf",
+    "codigos_encontrados": [
+      "TERLOCK"
+    ]
+  },
+  {
+    "arquivo": "flange-para-solda-face-com-o-ring.pdf",
+    "codigos_encontrados": [
+      "FLANGE",
+      "ISO",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "flange-reto-3000-psi-cod.61.pdf",
+    "codigos_encontrados": []
+  },
+  {
+    "arquivo": "flange-reto-6000-psi-cod.62.pdf",
+    "codigos_encontrados": []
+  },
+  {
+    "arquivo": "flange-reto-interlock-6000-psi-cod.62.pdf",
+    "codigos_encontrados": [
+      "TERLOCK"
+    ]
+  },
+  {
+    "arquivo": "flange-reto-supercat-6000-psi-cod.62.pdf",
+    "codigos_encontrados": []
+  },
+  {
+    "arquivo": "flange-x-flange.pdf",
+    "codigos_encontrados": [
+      "ISO",
+      "FLANGE",
+      "FAFFO",
+      "FAFFOR",
+      "ADO",
+      "RING",
+      "PARA"
+    ]
+  },
+  {
+    "arquivo": "flange-x-rosca-bsp.pdf",
+    "codigos_encontrados": [
+      "FAFRO",
+      "BSP",
+      "FLANGE",
+      "FAFROR",
+      "ISO",
+      "DIN",
+      "ADO",
+      "PARA",
+      "RING"
+    ]
+  },
+  {
+    "arquivo": "flange-x-rosca-npt.pdf",
+    "codigos_encontrados": [
+      "FAFRO",
+      "BSP",
+      "FLANGE",
+      "FAFROR",
+      "ISO",
+      "DIN",
+      "ADO",
+      "PARA",
+      "RING"
+    ]
+  },
+  {
+    "arquivo": "flange-x-tubo.pdf",
+    "codigos_encontrados": [
+      "ISO",
+      "CHEDULE",
+      "FAFTO",
+      "FAFTOR",
+      "TUBO",
+      "ADO",
+      "PARA",
+      "RING"
+    ]
+  },
+  {
+    "arquivo": "fluxo-contrario-a-conexao.pdf",
+    "codigos_encontrados": [
+      "AEVAR",
+      "DIN",
+      "XIMA",
+      "BSP",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "fluxo-no-sentido-da-conexoes.pdf",
+    "codigos_encontrados": [
+      "DIN",
+      "XIMA",
+      "BSP",
+      "AEVAR",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "furos-roscados-para-conexoes-de-medicao.pdf",
+    "codigos_encontrados": []
+  },
+  {
+    "arquivo": "generalidades-flanges.pdf",
+    "codigos_encontrados": [
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "generalidades-tubos.pdf",
+    "codigos_encontrados": [
+      "XIMA",
+      "PVC",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "generalidades.pdf",
+    "codigos_encontrados": [
+      "VEIS",
+      "CIE",
+      "ROSCAS",
+      "TUBOS",
+      "OSCADOS",
+      "DIN",
+      "PEDIDOS",
+      "SIMPLES",
+      "SOLDAR",
+      "SITIVOS",
+      "PERADOS",
+      "CNICAS",
+      "CURVOS",
+      "MONTADA",
+      "ONTAGEM",
+      "FLUIDOS",
+      "ONENTES",
+      "RADORES",
+      "APORCAS",
+      "FINAS",
+      "RINGS",
+      "JUNTAS",
+      "MACIAS",
+      "APOIO",
+      "RTANTES",
+      "COBRE"
+    ]
+  },
+  {
+    "arquivo": "indice-alfabetico.pdf",
+    "codigos_encontrados": [
+      "AAAF",
+      "AAAM",
+      "AABJ",
+      "AABJO",
+      "AABSI",
+      "AACF",
+      "AAFF",
+      "AAJF",
+      "AAJMF",
+      "AAMF",
+      "AAMFO",
+      "AAMFT",
+      "AAMM",
+      "AASF",
+      "AATF",
+      "ADE",
+      "ADM",
+      "ADS",
+      "AEA",
+      "AEAMB",
+      "AEAMRTB",
+      "AEAS",
+      "AEATB",
+      "AECI",
+      "AECP",
+      "AEDUF",
+      "AEJB",
+      "AEJC",
+      "AEJCF",
+      "AEJCFR",
+      "AEJCP",
+      "AEJFG",
+      "AEJFRS",
+      "AEJFS",
+      "AEJI",
+      "AEJM",
+      "AEJMO",
+      "AEJS",
+      "AEOB",
+      "AEOT",
+      "AEP",
+      "AETB",
+      "AETCP",
+      "AETI",
+      "AETIR",
+      "AETM",
+      "AETMO",
+      "AETP",
+      "AETPB",
+      "AETPC",
+      "AETPE",
+      "AETPEB",
+      "AETV",
+      "AETVB",
+      "AETVCP",
+      "AETVO",
+      "AEUB",
+      "AEUBR",
+      "AEUC",
+      "AEUCF",
+      "AEUCFR",
+      "AEUD",
+      "AEUDR",
+      "AEUDS",
+      "AEUF",
+      "AEUFE",
+      "AEUFG",
+      "AEUFJ",
+      "AEUFJB",
+      "AEUFRS",
+      "AEUFS",
+      "AEUM",
+      "AEUMO",
+      "AEUO",
+      "AEUOD",
+      "AEUS",
+      "AEUTP",
+      "AEUTPE",
+      "AEUTPS",
+      "AEVAR",
+      "AEVE",
+      "AEVEF",
+      "AJA",
+      "AJAMB",
+      "AJCI",
+      "AJJB",
+      "AJJC",
+      "AJJCP",
+      "AJJF",
+      "AJJI",
+      "AJJM",
+      "AJJS",
+      "AJOB",
+      "AJOT",
+      "AJP",
+      "AJTB",
+      "AJTCC",
+      "AJTCV",
+      "AJTI",
+      "AJTM",
+      "AJTMO",
+      "XIMA",
+      "AJTV",
+      "AJTVB",
+      "AJTVO",
+      "AJUC",
+      "AJUD",
+      "AJUF",
+      "AJUM",
+      "AJUMB",
+      "AJUS",
+      "ASV",
+      "FFOP",
+      "FFORP",
+      "CDMAN",
+      "CFS",
+      "CFSR",
+      "CRSH",
+      "DSF",
+      "ERAGF",
+      "ERAGM",
+      "ERF",
+      "ERFPF",
+      "ERFPM",
+      "ERM",
+      "FACT",
+      "FACTR",
+      "FAFFO",
+      "FAFFOR",
+      "FAFRO",
+      "FAFROR",
+      "FAFTO",
+      "FAFTOR",
+      "FSOP",
+      "FSORP",
+      "JAT",
+      "JKM",
+      "MAN",
+      "MEP",
+      "PEM",
+      "PFPM",
+      "PJM",
+      "PKJM",
+      "PKMB",
+      "PKMN",
+      "PKMBT",
+      "PKT",
+      "PMB",
+      "PMN",
+      "RBV",
+      "TBR",
+      "TBRD",
+      "TCB",
+      "TCV",
+      "TPE",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "indice-de-produtos.pdf",
+    "codigos_encontrados": [
+      "XIMA",
+      "JIC",
+      "JHIC",
+      "NTERIOR",
+      "SAE",
+      "DIN",
+      "DKO",
+      "ORFS",
+      "TERLOCK"
+    ]
+  },
+  {
+    "arquivo": "inserto-de-reforco.pdf",
+    "codigos_encontrados": []
+  },
+  {
+    "arquivo": "joelho-45-graus-painel-jic-37-graus-.pdf",
+    "codigos_encontrados": [
+      "JIC",
+      "BCD"
+    ]
+  },
+  {
+    "arquivo": "joelho-90-graus-painel-jic-37-graus.pdf",
+    "codigos_encontrados": [
+      "JIC",
+      "AJJC"
+    ]
+  },
+  {
+    "arquivo": "joelho-boleado.pdf",
+    "codigos_encontrados": [
+      "AEJB",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "joelho-com-contraporca.pdf",
+    "codigos_encontrados": [
+      "AEJCP",
+      "DIN",
+      "XIMA",
+      "BSP",
+      "ISO",
+      "UNF",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "joelho-com-flange-para-solda.pdf",
+    "codigos_encontrados": [
+      "AEJFS"
+    ]
+  },
+  {
+    "arquivo": "joelho-com-flange-reforcado-para-solda.pdf",
+    "codigos_encontrados": [
+      "AEJFRS"
+    ]
+  },
+  {
+    "arquivo": "joelho-com-flange-reforcado.pdf",
+    "codigos_encontrados": [
+      "AEJCFR",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "joelho-com-flange.pdf",
+    "codigos_encontrados": [
+      "DIN",
+      "AEJCF"
+    ]
+  },
+  {
+    "arquivo": "joelho-femea-jic-37-graus-com-rosca-npt.pdf",
+    "codigos_encontrados": [
+      "NPT",
+      "JIC",
+      "AJJF"
+    ]
+  },
+  {
+    "arquivo": "joelho-femea.pdf",
+    "codigos_encontrados": [
+      "BSP",
+      "AJF",
+      "NPT",
+      "MEA",
+      "AJMF",
+      "ATF",
+      "ACF"
+    ]
+  },
+  {
+    "arquivo": "joelho-macho-45-graus-jic-37-graus-com-porca-giratoria.pdf",
+    "codigos_encontrados": [
+      "JIC",
+      "AJTB"
+    ]
+  },
+  {
+    "arquivo": "joelho-macho-45-graus-jic-37-graus-rosca-npt.pdf",
+    "codigos_encontrados": [
+      "NPT",
+      "JIC"
+    ]
+  },
+  {
+    "arquivo": "joelho-macho-45-graus-orientavel-jic-37-graus-rosca-unf.pdf",
+    "codigos_encontrados": [
+      "JIC",
+      "UNF"
+    ]
+  },
+  {
+    "arquivo": "joelho-macho-bsp.pdf",
+    "codigos_encontrados": [
+      "BSP",
+      "AEJMO",
+      "DIN",
+      "XIMA",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "joelho-macho-bspt.pdf",
+    "codigos_encontrados": [
+      "AEJM",
+      "ISO",
+      "BSPT",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "joelho-macho-jic-37-graus-rosca-npt.pdf",
+    "codigos_encontrados": [
+      "NPTF",
+      "JIC",
+      "AJJM"
+    ]
+  },
+  {
+    "arquivo": "joelho-macho-metrica-conica.pdf",
+    "codigos_encontrados": [
+      "AEJM",
+      "ISO",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "joelho-macho-npt.pdf",
+    "codigos_encontrados": [
+      "AEJM",
+      "NPT"
+    ]
+  },
+  {
+    "arquivo": "joelho-macho-orientavel-jic-37-graus-rosca-bsp.pdf",
+    "codigos_encontrados": [
+      "BSP",
+      "JIC",
+      "AJJCP"
+    ]
+  },
+  {
+    "arquivo": "joelho-macho-orientavel-jic-37-graus-rosca-metrica (1).pdf",
+    "codigos_encontrados": [
+      "JIC",
+      "AJJCP"
+    ]
+  },
+  {
+    "arquivo": "joelho-macho-orientavel-jic-37-graus-rosca-metrica.pdf",
+    "codigos_encontrados": [
+      "JIC",
+      "AJJCP"
+    ]
+  },
+  {
+    "arquivo": "joelho-macho-orientavel-jic-37-graus-rosca-unf.pdf",
+    "codigos_encontrados": [
+      "JIC",
+      "AJJCP"
+    ]
+  },
+  {
+    "arquivo": "joelho-macho-x-femea.pdf",
+    "codigos_encontrados": [
+      "BSP",
+      "AJF",
+      "NPT",
+      "MEA",
+      "AJMF",
+      "ATF",
+      "ACF"
+    ]
+  },
+  {
+    "arquivo": "joelho-macho.pdf",
+    "codigos_encontrados": [
+      "AEJMO",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "joelho-para-painel.pdf",
+    "codigos_encontrados": [
+      "AEJC",
+      "ISO"
+    ]
+  },
+  {
+    "arquivo": "joelho-para-solda-jic-37-graus.pdf",
+    "codigos_encontrados": [
+      "AJUS",
+      "JIC",
+      "AJJS"
+    ]
+  },
+  {
+    "arquivo": "joelho.pdf",
+    "codigos_encontrados": [
+      "AEJS"
+    ]
+  },
+  {
+    "arquivo": "junta-de-bordas-cortantes.pdf",
+    "codigos_encontrados": [
+      "BSP",
+      "JKM",
+      "AEUOSID",
+      "AEUFJ"
+    ]
+  },
+  {
+    "arquivo": "juntas-de-plastico-com-anel-de-apoio.pdf",
+    "codigos_encontrados": [
+      "PTFE",
+      "BSP",
+      "JAT"
+    ]
+  },
+  {
+    "arquivo": "juntas-de-vedacao-de-cobre.pdf",
+    "codigos_encontrados": [
+      "BSP"
+    ]
+  },
+  {
+    "arquivo": "juntas-macias.pdf",
+    "codigos_encontrados": [
+      "DIN",
+      "BSP"
+    ]
+  },
+  {
+    "arquivo": "linha-agricola.pdf",
+    "codigos_encontrados": [
+      "PTFE",
+      "DIN",
+      "CHM",
+      "ERAGF"
+    ]
+  },
+  {
+    "arquivo": "linha-industrial-face-plana.pdf",
+    "codigos_encontrados": [
+      "NPT",
+      "PTFE",
+      "DIN",
+      "ISO",
+      "ERFPF",
+      "ERFPM"
+    ]
+  },
+  {
+    "arquivo": "linha-industrial.pdf",
+    "codigos_encontrados": [
+      "ISO",
+      "NPT",
+      "PTFE",
+      "DIN",
+      "ERF",
+      "ERM"
+    ]
+  },
+  {
+    "arquivo": "macho-fixo-interlock-jic-37-graus.pdf",
+    "codigos_encontrados": [
+      "TERLOCK"
+    ]
+  },
+  {
+    "arquivo": "macho-fixo-interlock-rosca-bsp.pdf",
+    "codigos_encontrados": [
+      "TERLOCK"
+    ]
+  },
+  {
+    "arquivo": "macho-fixo-interlock-rosca-npt.pdf",
+    "codigos_encontrados": [
+      "TERLOCK"
+    ]
+  },
+  {
+    "arquivo": "macho-fixo-jic-37-graus-pjm.pdf",
+    "codigos_encontrados": [
+      "JIC"
+    ]
+  },
+  {
+    "arquivo": "macho-fixo-jic-37-graus-pkjm.pdf",
+    "codigos_encontrados": [
+      "JIC"
+    ]
+  },
+  {
+    "arquivo": "macho-fixo-jic-37-graus.pdf",
+    "codigos_encontrados": [
+      "JIC"
+    ]
+  },
+  {
+    "arquivo": "macho-fixo-orfs-pfpm.pdf",
+    "codigos_encontrados": [
+      "ORFS"
+    ]
+  },
+  {
+    "arquivo": "macho-fixo-orfs.pdf",
+    "codigos_encontrados": [
+      "ORFS"
+    ]
+  },
+  {
+    "arquivo": "macho-fixo-rosca-bsp.pdf",
+    "codigos_encontrados": [
+      "BSP"
+    ]
+  },
+  {
+    "arquivo": "macho-fixo-rosca-npt.pdf",
+    "codigos_encontrados": [
+      "NPT"
+    ]
+  },
+  {
+    "arquivo": "macho-x-macho.pdf",
+    "codigos_encontrados": [
+      "BSPT",
+      "AFF",
+      "UNF",
+      "TRICA",
+      "NPT",
+      "AMM",
+      "AMF"
+    ]
+  },
+  {
+    "arquivo": "manometros.pdf",
+    "codigos_encontrados": [
+      "BSP",
+      "MAN",
+      "NPT"
+    ]
+  },
+  {
+    "arquivo": "medidas-de-conexao-com-anilha-de-cravacao-bujoes-e-furos-roscados.pdf",
+    "codigos_encontrados": [
+      "DIN",
+      "ISO",
+      "UNF",
+      "DIS",
+      "XIMA",
+      "LLLS",
+      "NPT",
+      "BSP",
+      "BSPT",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "mola-espiral-plastica.pdf",
+    "codigos_encontrados": [
+      "DSF"
+    ]
+  },
+  {
+    "arquivo": "niple.pdf",
+    "codigos_encontrados": [
+      "AEAS",
+      "DIN",
+      "XIMA",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "niples-para-solda-generalidades.pdf",
+    "codigos_encontrados": [
+      "DIN",
+      "DIS"
+    ]
+  },
+  {
+    "arquivo": "normas-aplicaveis.pdf",
+    "codigos_encontrados": [
+      "DIN",
+      "XAEUM",
+      "XAEUMO",
+      "XAEUD",
+      "XAEJM",
+      "XAEJI",
+      "XAETM",
+      "XAETI",
+      "XAEUS",
+      "XAEUC",
+      "XAEJC",
+      "XAEUDS",
+      "XAETV",
+      "XAEJB",
+      "XAETB",
+      "XAETVB",
+      "XAEAMB",
+      "XAEATB",
+      "XAECI",
+      "AEAS",
+      "AEP",
+      "AECP",
+      "AEUM",
+      "AEUMO",
+      "AEUD",
+      "AEJM",
+      "AEJI",
+      "AETM",
+      "AETI",
+      "AEUS",
+      "AEUC",
+      "AEJC",
+      "AEUDS",
+      "AETV",
+      "AECI"
+    ]
+  },
+  {
+    "arquivo": "o-rings.pdf",
+    "codigos_encontrados": [
+      "AEUOSID",
+      "AABSI",
+      "AEOB",
+      "SAE",
+      "UNF"
+    ]
+  },
+  {
+    "arquivo": "obturador-jic-37-graus.pdf",
+    "codigos_encontrados": [
+      "JIC",
+      "AJA",
+      "AJOB"
+    ]
+  },
+  {
+    "arquivo": "obturador-para-tubo.pdf",
+    "codigos_encontrados": [
+      "DIN",
+      "AEOT"
+    ]
+  },
+  {
+    "arquivo": "obturador.pdf",
+    "codigos_encontrados": [
+      "DIN",
+      "AEOB"
+    ]
+  },
+  {
+    "arquivo": "para-terminal (1).pdf",
+    "codigos_encontrados": [
+      "DSF"
+    ]
+  },
+  {
+    "arquivo": "para-terminal-com-flange.pdf",
+    "codigos_encontrados": [
+      "DSF"
+    ]
+  },
+  {
+    "arquivo": "para-terminal.pdf",
+    "codigos_encontrados": [
+      "DSF"
+    ]
+  },
+  {
+    "arquivo": "ponta-lisa-x-femea.pdf",
+    "codigos_encontrados": [
+      "LISA",
+      "NPT",
+      "AAF",
+      "UNF",
+      "BSP"
+    ]
+  },
+  {
+    "arquivo": "ponta-lisa-x-macho.pdf",
+    "codigos_encontrados": [
+      "LISA",
+      "NPT",
+      "AAM",
+      "UNF",
+      "BSP"
+    ]
+  },
+  {
+    "arquivo": "ponta-tubo-interlock.pdf",
+    "codigos_encontrados": [
+      "TERLOCK"
+    ]
+  },
+  {
+    "arquivo": "ponta-tubo.pdf",
+    "codigos_encontrados": []
+  },
+  {
+    "arquivo": "porca-jic-37-graus.pdf",
+    "codigos_encontrados": [
+      "AJP",
+      "JIC",
+      "AJOT"
+    ]
+  },
+  {
+    "arquivo": "porca.pdf",
+    "codigos_encontrados": [
+      "ISO",
+      "AEP",
+      "AEA",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "posicionamento-angular-dos-terminais-montados.pdf",
+    "codigos_encontrados": []
+  },
+  {
+    "arquivo": "principios-de-construcao-e-faixas-de-pressao.pdf",
+    "codigos_encontrados": [
+      "DIN",
+      "ISO",
+      "XIMA",
+      "NBR",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "recomendacoes-para-a-montagem.pdf",
+    "codigos_encontrados": []
+  },
+  {
+    "arquivo": "recomendacoes-para-a-selecao-de-tubos.pdf",
+    "codigos_encontrados": [
+      "DIS",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "rosca-femea-.pdf",
+    "codigos_encontrados": [
+      "AEVAR",
+      "BSP"
+    ]
+  },
+  {
+    "arquivo": "te-central-orientavel-rosca-jic-37-graus-rosca-bsp.pdf",
+    "codigos_encontrados": [
+      "BSP",
+      "JIC"
+    ]
+  },
+  {
+    "arquivo": "te-vertical-orientavel-lateral-jic-37-graus-rosca-bsp.pdf",
+    "codigos_encontrados": [
+      "BSP",
+      "JIC",
+      "AJTVO"
+    ]
+  },
+  {
+    "arquivo": "te-vertical-orientavel-lateral-jic-37-graus-rosca-unf.pdf",
+    "codigos_encontrados": [
+      "UNF",
+      "JIC"
+    ]
+  },
+  {
+    "arquivo": "tee-boleado.pdf",
+    "codigos_encontrados": [
+      "AETB",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "tee-central-painel-jic-37-graus.pdf",
+    "codigos_encontrados": [
+      "JIC",
+      "AJTCC"
+    ]
+  },
+  {
+    "arquivo": "tee-com-contraporca.pdf",
+    "codigos_encontrados": [
+      "AETCP",
+      "DIN",
+      "XIMA",
+      "BSP",
+      "ISO",
+      "UNF",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "tee-femea.pdf",
+    "codigos_encontrados": [
+      "BSP",
+      "AJF",
+      "NPT",
+      "MEA",
+      "AJMF",
+      "ATF",
+      "ACF"
+    ]
+  },
+  {
+    "arquivo": "tee-igual-jic-37-graus-com-porca-giratoria.pdf",
+    "codigos_encontrados": [
+      "JIC",
+      "AJTB"
+    ]
+  },
+  {
+    "arquivo": "tee-macho-bsp.pdf",
+    "codigos_encontrados": [
+      "BSP",
+      "DIN",
+      "AETMO",
+      "XIMA",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "tee-macho-bspt.pdf",
+    "codigos_encontrados": [
+      "BSPT",
+      "AETM",
+      "ISO",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "tee-macho-central-jic-37-graus-rosca-npt.pdf",
+    "codigos_encontrados": [
+      "NPT",
+      "JIC",
+      "AJTM"
+    ]
+  },
+  {
+    "arquivo": "tee-macho-lateral-jic-37-graus-rosca-npt.pdf",
+    "codigos_encontrados": [
+      "JIC",
+      "NPT",
+      "AJTV"
+    ]
+  },
+  {
+    "arquivo": "tee-macho-metrica-conica.pdf",
+    "codigos_encontrados": [
+      "AETM",
+      "ISO",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "tee-macho-npt.pdf",
+    "codigos_encontrados": [
+      "NPT",
+      "AETM"
+    ]
+  },
+  {
+    "arquivo": "tee-redutor.pdf",
+    "codigos_encontrados": [
+      "AETIR",
+      "XIMA",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "tee-vertical-boleado.pdf",
+    "codigos_encontrados": [
+      "AETVB",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "tee-vertical-com-contraporca.pdf",
+    "codigos_encontrados": [
+      "DIN",
+      "AETVCP",
+      "XIMA",
+      "BSP",
+      "ISO",
+      "UNF",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "tee-vertical-jic-37-graus-com-porca-giratoria.pdf",
+    "codigos_encontrados": [
+      "JIC",
+      "AJTVB"
+    ]
+  },
+  {
+    "arquivo": "tee-vertical-macho-.pdf",
+    "codigos_encontrados": [
+      "AETVO",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "tee-vertical-macho-bsp.pdf",
+    "codigos_encontrados": [
+      "BSP",
+      "DIN",
+      "AETVO",
+      "XIMA",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "tee-vertical-macho-bspt.pdf",
+    "codigos_encontrados": [
+      "BSPT",
+      "AETV",
+      "ISO",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "tee-vertical-macho-metrica-conica.pdf",
+    "codigos_encontrados": [
+      "AETV",
+      "ISO",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "tee-vertical-macho-npt.pdf",
+    "codigos_encontrados": [
+      "AETV",
+      "NPT"
+    ]
+  },
+  {
+    "arquivo": "tee-vertical-painel-jic-37-graus.pdf",
+    "codigos_encontrados": [
+      "JIC",
+      "AJTCV"
+    ]
+  },
+  {
+    "arquivo": "terminal-interlock-dko-45-graus.pdf",
+    "codigos_encontrados": [
+      "DKO"
+    ]
+  },
+  {
+    "arquivo": "terminal-interlock-dko-90-graus.pdf",
+    "codigos_encontrados": [
+      "DKO"
+    ]
+  },
+  {
+    "arquivo": "terminal-interlock-dko-reto.pdf",
+    "codigos_encontrados": [
+      "TERLOCK"
+    ]
+  },
+  {
+    "arquivo": "terminal-ponta-lisa-45-graus.pdf",
+    "codigos_encontrados": []
+  },
+  {
+    "arquivo": "terminal-ponta-lisa-90-graus.pdf",
+    "codigos_encontrados": []
+  },
+  {
+    "arquivo": "terminal-ponta-lisa-reto.pdf",
+    "codigos_encontrados": []
+  },
+  {
+    "arquivo": "terminal-prensado-dk0-90-graus.pdf",
+    "codigos_encontrados": [
+      "DKO"
+    ]
+  },
+  {
+    "arquivo": "terminal-prensado-dko-45-graus.pdf",
+    "codigos_encontrados": [
+      "DKO"
+    ]
+  },
+  {
+    "arquivo": "terminal-prensado-dko-reto.pdf",
+    "codigos_encontrados": []
+  },
+  {
+    "arquivo": "tipos-de-rosca.pdf",
+    "codigos_encontrados": [
+      "DIN",
+      "NPT",
+      "BSP",
+      "BSPT",
+      "UNF",
+      "TRICA"
+    ]
+  },
+  {
+    "arquivo": "torques-de-aperto-para-bujoes-roscados.pdf",
+    "codigos_encontrados": [
+      "DIN",
+      "BSP",
+      "ISO"
+    ]
+  },
+  {
+    "arquivo": "tubo-de-aco-inoxidavel-trefilado-com-costura.pdf",
+    "codigos_encontrados": [
+      "COSTURA",
+      "AISI",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "tubo-de-cobre-trefilado-recozido-brilhante-em-rolos.pdf",
+    "codigos_encontrados": [
+      "TCB",
+      "ROLOS",
+      "TCV"
+    ]
+  },
+  {
+    "arquivo": "tubo-de-cobre-trefilado-recozido-brilhante-revestido-com-pvc-em-rolos.pdf",
+    "codigos_encontrados": [
+      "TCB",
+      "ROLOS",
+      "TCV"
+    ]
+  },
+  {
+    "arquivo": "tubo-de-cobre-trefilado-sem-costura.pdf",
+    "codigos_encontrados": [
+      "COSTURA"
+    ]
+  },
+  {
+    "arquivo": "tubo-de-poliamida-incolor-nylon-11.pdf",
+    "codigos_encontrados": [
+      "LIAMIDA",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "tubo-de-polietileno.pdf",
+    "codigos_encontrados": [
+      "TPE",
+      "ETILENO"
+    ]
+  },
+  {
+    "arquivo": "tubo-x-tubo.pdf",
+    "codigos_encontrados": [
+      "DIN",
+      "XIMA",
+      "BSP",
+      "AEVAR",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "uniao-boleada-de-reducao.pdf",
+    "codigos_encontrados": [
+      "AEUBR",
+      "XIMA",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "uniao-boleada.pdf",
+    "codigos_encontrados": [
+      "AEUB"
+    ]
+  },
+  {
+    "arquivo": "uniao-com-flange-para-solda.pdf",
+    "codigos_encontrados": [
+      "AEUFS"
+    ]
+  },
+  {
+    "arquivo": "uniao-com-flange-reforcado-para-solda.pdf",
+    "codigos_encontrados": [
+      "AEUFRS"
+    ]
+  },
+  {
+    "arquivo": "uniao-dupla-1.pdf",
+    "codigos_encontrados": [
+      "AEUD",
+      "ISO"
+    ]
+  },
+  {
+    "arquivo": "uniao-dupla-de-reducao.pdf",
+    "codigos_encontrados": [
+      "AEUDR"
+    ]
+  },
+  {
+    "arquivo": "uniao-dupla-painel-jic-37-graus.pdf",
+    "codigos_encontrados": [
+      "AJUC",
+      "JIC",
+      "BCDE"
+    ]
+  },
+  {
+    "arquivo": "uniao-femea-jic-37-graus-com-rosca-bsp.pdf",
+    "codigos_encontrados": [
+      "JIC",
+      "BSP"
+    ]
+  },
+  {
+    "arquivo": "uniao-femea-para-manometro-boleada.pdf",
+    "codigos_encontrados": [
+      "BSP",
+      "AEUFJB"
+    ]
+  },
+  {
+    "arquivo": "uniao-femea-para-manometro.pdf",
+    "codigos_encontrados": [
+      "AEUM",
+      "AEAS",
+      "BSP",
+      "XAEUM",
+      "DYNAR"
+    ]
+  },
+  {
+    "arquivo": "uniao-femea.pdf",
+    "codigos_encontrados": [
+      "AEUF",
+      "XIMA",
+      "BSP",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "uniao-macho-bsp.pdf",
+    "codigos_encontrados": [
+      "ISO",
+      "DIN",
+      "BSP",
+      "AEUMO",
+      "XIMA",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "uniao-macho-bspt.pdf",
+    "codigos_encontrados": [
+      "ISO",
+      "BSPT",
+      "DIN",
+      "AEUM"
+    ]
+  },
+  {
+    "arquivo": "uniao-macho-jic-37-graus-bsp.pdf",
+    "codigos_encontrados": [
+      "BSP",
+      "AJUM",
+      "JIC"
+    ]
+  },
+  {
+    "arquivo": "uniao-macho-jic-37-graus-com-rosca-bsp-e-porca-giratoria.pdf",
+    "codigos_encontrados": [
+      "JIC",
+      "AJAMB",
+      "BSP"
+    ]
+  },
+  {
+    "arquivo": "uniao-macho-jic-37-graus-com-rosca-npt-e-porca-giratoria.pdf",
+    "codigos_encontrados": [
+      "NPT",
+      "AJAMB",
+      "JIC",
+      "UNF"
+    ]
+  },
+  {
+    "arquivo": "uniao-macho-jic-37-graus-com-rosca-unf-e-porca-giratoria.pdf",
+    "codigos_encontrados": [
+      "NPT",
+      "AJAMB",
+      "JIC",
+      "UNF"
+    ]
+  },
+  {
+    "arquivo": "uniao-macho-jic-37-graus-metrica.pdf",
+    "codigos_encontrados": [
+      "JIC",
+      "AJUM"
+    ]
+  },
+  {
+    "arquivo": "uniao-macho-jic-37-graus-npt.pdf",
+    "codigos_encontrados": [
+      "JIC",
+      "NPT"
+    ]
+  },
+  {
+    "arquivo": "uniao-macho-jic-37-graus-rosca-metrica-e-porca-giratoria.pdf",
+    "codigos_encontrados": [
+      "JIC",
+      "AJAMB",
+      "BSP"
+    ]
+  },
+  {
+    "arquivo": "uniao-macho-jic-37-graus-unf.pdf",
+    "codigos_encontrados": [
+      "JIC",
+      "UNF"
+    ]
+  },
+  {
+    "arquivo": "uniao-macho-metrica.pdf",
+    "codigos_encontrados": [
+      "ISO",
+      "DIN",
+      "AEUMO"
+    ]
+  },
+  {
+    "arquivo": "uniao-macho-npt.pdf",
+    "codigos_encontrados": [
+      "NPT",
+      "AEUM",
+      "XIMA",
+      "NTERIOR"
+    ]
+  },
+  {
+    "arquivo": "uniao-macho-unf.pdf",
+    "codigos_encontrados": [
+      "UNF",
+      "AEUMO",
+      "AEUM"
+    ]
+  },
+  {
+    "arquivo": "uniao-orientavel-dupla-bsp.pdf",
+    "codigos_encontrados": [
+      "BSP",
+      "AEUOD",
+      "DIN"
+    ]
+  },
+  {
+    "arquivo": "uniao-orientavel-dupla.pdf",
+    "codigos_encontrados": [
+      "DIN",
+      "AEUOD"
+    ]
+  },
+  {
+    "arquivo": "uniao-orientavel-simples-bsp.pdf",
+    "codigos_encontrados": [
+      "BSP",
+      "AEUO"
+    ]
+  },
+  {
+    "arquivo": "uniao-orientavel-simples.pdf",
+    "codigos_encontrados": [
+      "AEUO",
+      "BSP"
+    ]
+  },
+  {
+    "arquivo": "uniao-para-painel.pdf",
+    "codigos_encontrados": [
+      "AEUC",
+      "ISO"
+    ]
+  },
+  {
+    "arquivo": "uniao-para-solda-jic-37-graus.pdf",
+    "codigos_encontrados": [
+      "AJUS",
+      "JIC",
+      "AJJS"
+    ]
+  },
+  {
+    "arquivo": "uniao.pdf",
+    "codigos_encontrados": [
+      "AEUS",
+      "ISO"
+    ]
+  },
+  {
+    "arquivo": "valvula-rosca-femea.pdf",
+    "codigos_encontrados": [
+      "NPT",
+      "BSP",
+      "AEVEF"
+    ]
+  },
+  {
+    "arquivo": "valvulas-de-esfera-tubo-x-tubo.pdf",
+    "codigos_encontrados": [
+      "AEVE"
+    ]
+  }
+]

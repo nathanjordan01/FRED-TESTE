@@ -1,0 +1,293 @@
+{
+  "name": "Dynar PDF Extractor v3 - Híbrido + PostgreSQL",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [-1984, 128],
+      "id": "722ac779-9e8b-4612-8bc2-f193444c55f8",
+      "name": "Start"
+    },
+    {
+      "parameters": {
+        "resource": "fileFolder",
+        "queryString": ".pdf",
+        "returnAll": true,
+        "filter": {
+          "driveId": { "__rl": true, "value": "My Drive", "mode": "list", "cachedResultName": "My Drive" },
+          "folderId": { "__rl": true, "value": "17ljYxd28b3tCUMsFgRjIyFazGz5P-K6q", "mode": "id" }
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [-1760, 128],
+      "id": "83436d6f-e6d5-4ca2-9c72-a420172831c3",
+      "name": "Search PDFs",
+      "credentials": { "googleDriveOAuth2Api": { "id": "EuOqHuLFXtfCJBhO", "name": "Google Drive account | Admin" } }
+    },
+    {
+      "parameters": { "options": {} },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [-1536, 128],
+      "id": "3f37d31f-913a-4c3c-87ec-2ccb01432e91",
+      "name": "Batch 3"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": false, "leftValue": "", "typeValidation": "strict", "version": 2 },
+          "conditions": [
+            { "leftValue": "={{ $json.name }}", "rightValue": "catalogo-geral", "operator": { "type": "string", "operation": "notContains" }, "id": "f1" },
+            { "leftValue": "={{ $json.name }}", "rightValue": "catalogo-manual", "operator": { "type": "string", "operation": "notContains" }, "id": "f2" },
+            { "leftValue": "={{ $json.name }}", "rightValue": "catalogo-tubulacoes", "operator": { "type": "string", "operation": "notContains" }, "id": "f3" },
+            { "leftValue": "={{ $json.name }}", "rightValue": "indice-de-produtos", "operator": { "type": "string", "operation": "notContains" }, "id": "f4" }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [-1392, 128],
+      "id": "b1c2d3e4-f5a6-7890-abcd-filter1234567",
+      "name": "Filtrar Multi-Página"
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": { "__rl": true, "value": "={{ $json.id }}", "mode": "id" },
+        "options": { "fileName": "={{ $json.name }}" }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [-1248, 144],
+      "id": "2fff1574-705f-40cc-9f8b-874a7a4f0583",
+      "name": "Download file",
+      "credentials": { "googleDriveOAuth2Api": { "id": "EuOqHuLFXtfCJBhO", "name": "Google Drive account | Admin" } }
+    },
+    {
+      "parameters": { "operation": "pdf", "options": { "joinPages": true, "keepSource": "binary" } },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1.1,
+      "position": [-1024, 144],
+      "id": "82d3823b-2708-4868-9889-f20557bc23d7",
+      "name": "Extract Text from PDF"
+    },
+    {
+      "parameters": {
+        "resource": "image",
+        "operation": "analyze",
+        "modelId": { "__rl": true, "value": "=models/gemini-2.5-flash", "mode": "id" },
+        "text": "=Você é um extrator especializado em catálogos industriais de conexões hidráulicas Dynar.\n\nTAREFA: Extrair TODAS as informações desta página com 100% de completude.\n\nPASSO 1 — METADADOS:\n- product_type: título principal da página\n- page_section: número da seção (ex: \"8.4\")\n- standard: norma(s) técnica(s) ou null\n- subtitle: subtítulo ou null\n\nPASSO 2 — TEXTO DESCRITIVO:\nExtraia TODOS os blocos de texto (descrições, materiais, fluidos, temperaturas, observações).\nConcatene em \"descriptive_text\" com \\n entre blocos.\n\nPASSO 3 — TABELAS:\nA página pode ter MÚLTIPLAS tabelas. Para cada uma:\n- Liste TODOS os cabeçalhos EXATAMENTE como no PDF\n- Extraia TODAS as linhas sem exceção\n- Se colunas agrupam linhas, REPITA o valor em cada linha\n\nPASSO 4 — FORMATO JSON:\n{\n  \"product_type\": \"string\",\n  \"page_section\": \"string\",\n  \"standard\": \"string ou null\",\n  \"subtitle\": \"string ou null\",\n  \"descriptive_text\": \"string com \\\\n\",\n  \"observations\": \"string ou null\",\n  \"has_table\": true,\n  \"tables\": [\n    {\n      \"table_title\": \"string\",\n      \"column_headers\": [\"col1\", \"col2\"],\n      \"column_units\": {\"col1\": \"mm\"},\n      \"row_count\": number,\n      \"items\": [{\"col1\": valor, \"col2\": valor}]\n    }\n  ],\n  \"total_order_codes\": number\n}\n\nSe NÃO tem tabela:\n{\"product_type\":\"...\",\"page_section\":\"...\",\"has_table\":false,\"full_text_content\":\"...\"}\n\nREGRAS:\n1. DECIMAIS: vírgula = decimal. 36,300→36.3 NUNCA 36300\n2. CAMPOS AGRUPADOS: repita em cada linha\n3. TIPOS: números como number, textos como string\n4. COMPLETUDE: extraia TODAS as linhas. Conte antes.\n5. CÓDIGOS: copie EXATAMENTE como no PDF\n6. MÚLTIPLOS CÓDIGOS: se há BSP E NPT, extraia TODOS\n7. NOTAS: inclua TODAS (O-ring, temperatura, anilha E2)\n8. O-RING: inclua medida exata (ex: \"8,1 x 1,6\")\n9. UNIDADES: indique em column_units\n10. Ignore \"ANTERIOR\"/\"PRÓXIMA\"\n11. Campo inexistente = null\n12. row_count DEVE bater com items.length\n\nRetorne SOMENTE o JSON.",
+        "inputType": "binary",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1.2,
+      "position": [-800, 144],
+      "id": "8cc6651a-eaf8-4ce6-afef-99659032d53d",
+      "name": "Gemini Flash Vision",
+      "credentials": { "googlePalmApi": { "id": "oyBniSGPd0HBDOte", "name": "Google Gemini(PaLM) Api account 4" } },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "const rawText = $('Extract Text from PDF').item.json.text || '';\nconst visionRaw = $json.content?.parts?.[0]?.text || '';\nconst fileName = $('Download file').item.json.name || 'unknown';\n\nlet visionJSON;\ntry {\n  let clean = visionRaw.replace(/```json\\n?/g, '').replace(/```\\n?/g, '').trim();\n  visionJSON = JSON.parse(clean);\n} catch (e) {\n  return { valid: false, error: 'JSON_PARSE_ERROR', detail: e.message, rawText, visionRaw, fileName };\n}\n\nif (visionJSON.has_table === false) {\n  visionJSON.source_filename = fileName;\n  return { valid: true, type: 'informational', data: visionJSON, fileName, rawText };\n}\n\nconst errors = [];\nconst warnings = [];\n\nif (visionJSON.tables) {\n  for (const table of visionJSON.tables) {\n    if (table.row_count !== (table.items?.length || 0)) {\n      errors.push({ type: 'ROW_COUNT_MISMATCH', table: table.table_title, declared: table.row_count, actual: table.items?.length || 0 });\n    }\n  }\n}\n\nconst allNums = rawText.match(/\\d+[,.]?\\d*/g) || [];\nconst sigNums = [...new Set(allNums.map(n => parseFloat(n.replace(',', '.'))).filter(n => !isNaN(n) && n > 1 && n < 100000))];\nconst visionStr = JSON.stringify(visionJSON);\nconst vNums = new Set();\n(visionStr.match(/\\d+[,.]?\\d*/g) || []).forEach(x => vNums.add(parseFloat(x.replace(',', '.'))));\nconst missing = sigNums.filter(n => ![...vNums].some(v => Math.abs(v - n) < 0.15));\nconst ratio = sigNums.length > 0 ? missing.length / sigNums.length : 0;\nif (ratio > 0.15) errors.push({ type: 'DATA_MISSING', missingCount: missing.length, total: sigNums.length, ratio: Math.round(ratio*100)+'%', samples: missing.slice(0,10) });\n\nif (visionJSON.tables) {\n  for (const t of visionJSON.tables) {\n    (t.items||[]).forEach((item, i) => {\n      for (const [k,v] of Object.entries(item)) {\n        if (v === null || v === '' || v === undefined) warnings.push({ type: 'EMPTY_FIELD', table: t.table_title, row: i, field: k });\n      }\n    });\n  }\n}\n\nconst isValid = errors.length === 0;\nvisionJSON.source_filename = fileName;\nreturn { valid: isValid, errors, warnings, data: visionJSON, rawText, fileName, summary: { errors: errors.length, warnings: warnings.length, nums_text: sigNums.length, nums_missing: missing.length, ratio: Math.round(ratio*100)+'%' } };"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [-576, -32],
+      "id": "9e90fa40-3e76-434a-87e3-11eca274da28",
+      "name": "Validação Cruzada"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "strict", "version": 2 },
+          "conditions": [{ "leftValue": "={{ $json.valid }}", "rightValue": true, "operator": { "type": "boolean", "operation": "equals" }, "id": "cond1" }],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [-352, -32],
+      "id": "4106547f-0cbd-40f4-a899-dc7acfd6b381",
+      "name": "Válido?"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "const d = $json.data || {};\nconst fn = $json.fileName || '';\nconst errs = JSON.stringify($json.errors || []);\nconst warns = JSON.stringify($json.warnings || []);\nconst tables_json = JSON.stringify(d.tables || []);\n\nreturn {\n  source_filename: fn,\n  product_type: d.product_type || '',\n  page_section: d.page_section || '',\n  standard: d.standard || '',\n  subtitle: d.subtitle || '',\n  descriptive_text: d.descriptive_text || d.full_text_content || '',\n  observations: d.observations || '',\n  has_table: d.has_table !== false,\n  total_order_codes: d.total_order_codes || 0,\n  tables_json: tables_json,\n  validation_status: 'APROVADO',\n  needs_review: false,\n  errors: errs,\n  warnings: warns\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [-128, -128],
+      "id": "493d505a-0209-427f-a6bc-c537e63bd0c9",
+      "name": "Format Output OK"
+    },
+    {
+      "parameters": { "amount": 2, "unit": "minutes" },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [48, 192],
+      "id": "c4ca7bc9-a725-430d-b266-448038bf7e07",
+      "name": "Wait 2min",
+      "webhookId": "1ea50dfb-5560-49a5-9b69-59e66e8d9fda"
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": { "__rl": true, "value": "={{ $('Download file').item.json.id }}", "mode": "id" },
+        "options": { "fileName": "={{ $('Download file').item.json.name }}" }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [272, 192],
+      "id": "ace7d858-2e2e-4fde-acc1-c3fa583e2bc9",
+      "name": "Re-download",
+      "credentials": { "googleDriveOAuth2Api": { "id": "EuOqHuLFXtfCJBhO", "name": "Google Drive account | Admin" } }
+    },
+    {
+      "parameters": {
+        "resource": "image",
+        "operation": "analyze",
+        "modelId": { "__rl": true, "value": "=models/gemini-2.5-pro", "mode": "id" },
+        "text": "=ATENÇÃO: Extração anterior FALHOU na validação.\n\nERROS: {{ JSON.stringify($('Validação Cruzada').item.json.errors) }}\n\nTEXTO BRUTO DO PDF (GROUND TRUTH):\n{{ $('Validação Cruzada').item.json.rawText }}\n\nUse o texto bruto como referência ABSOLUTA para não omitir dados.\nAnalise a IMAGEM para entender o layout e associação entre colunas.\n\nVocê é um extrator especializado em catálogos industriais de conexões hidráulicas Dynar.\n\nTAREFA: Extrair TODAS as informações desta página com 100% de completude.\n\nPASSO 1 — METADADOS:\n- product_type: título principal da página\n- page_section: número da seção (ex: \"8.4\")\n- standard: norma(s) técnica(s) ou null\n- subtitle: subtítulo ou null\n\nPASSO 2 — TEXTO DESCRITIVO:\nExtraia TODOS os blocos de texto.\nConcatene em \"descriptive_text\" com \\n entre blocos.\n\nPASSO 3 — TABELAS:\nPara cada tabela:\n- Liste TODOS os cabeçalhos EXATAMENTE como no PDF\n- Extraia TODAS as linhas sem exceção\n- Se colunas agrupam linhas, REPITA o valor em cada linha\n\nPASSO 4 — FORMATO JSON:\n{\"product_type\":\"string\",\"page_section\":\"string\",\"standard\":\"string ou null\",\"subtitle\":\"string ou null\",\"descriptive_text\":\"string\",\"observations\":\"string ou null\",\"has_table\":true,\"tables\":[{\"table_title\":\"string\",\"column_headers\":[],\"column_units\":{},\"row_count\":number,\"items\":[{}]}],\"total_order_codes\":number}\n\nREGRAS:\n1. vírgula=decimal 2. repita campos agrupados 3. números como number 4. extraia TODAS as linhas 5. copie códigos exatamente 6. row_count=items.length\n\nRetorne SOMENTE o JSON.",
+        "inputType": "binary",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1.2,
+      "position": [496, 192],
+      "id": "29280a57-43b4-42f1-9075-a3d3d40ee24c",
+      "name": "Gemini Pro Re-extract",
+      "credentials": { "googlePalmApi": { "id": "oyBniSGPd0HBDOte", "name": "Google Gemini(PaLM) Api account 4" } },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "const rawText = $('Validação Cruzada').item.json.rawText || '';\nconst visionRaw = $json.content?.parts?.[0]?.text || '';\nconst fileName = $('Download file').item.json.name || 'unknown';\n\nlet visionJSON;\ntry {\n  let clean = visionRaw.replace(/```json\\n?/g, '').replace(/```\\n?/g, '').trim();\n  visionJSON = JSON.parse(clean);\n} catch (e) {\n  return { valid: false, error: 'JSON_PARSE_ERROR', detail: e.message, fileName };\n}\n\nvisionJSON.source_filename = fileName;\nif (visionJSON.has_table === false) return { valid: true, data: visionJSON, fileName };\n\nconst errors = [];\nif (visionJSON.tables) {\n  for (const t of visionJSON.tables) {\n    if (t.row_count !== (t.items?.length || 0)) errors.push({ type: 'ROW_COUNT_MISMATCH', table: t.table_title });\n  }\n}\nreturn { valid: errors.length === 0, errors, data: visionJSON, fileName };"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [720, 128],
+      "id": "6bf2c4b6-782e-44d7-82e1-e5dbdbbda832",
+      "name": "Revalidação"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "strict", "version": 1 },
+          "conditions": [{ "leftValue": "={{ $json.valid }}", "rightValue": true, "operator": { "type": "boolean", "operation": "equals" } }],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [944, 128],
+      "id": "d25812d4-d0ea-45d2-8675-2278858c79db",
+      "name": "Válido 2?"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "const d = $json.data || {};\nconst fn = $json.fileName || '';\nconst errs = JSON.stringify($json.errors || []);\nconst warns = JSON.stringify($json.warnings || []);\nconst tables_json = JSON.stringify(d.tables || []);\n\nreturn {\n  source_filename: fn,\n  product_type: d.product_type || '',\n  page_section: d.page_section || '',\n  standard: d.standard || '',\n  subtitle: d.subtitle || '',\n  descriptive_text: d.descriptive_text || d.full_text_content || '',\n  observations: d.observations || '',\n  has_table: d.has_table !== false,\n  total_order_codes: d.total_order_codes || 0,\n  tables_json: tables_json,\n  validation_status: 'APROVADO',\n  needs_review: false,\n  errors: errs,\n  warnings: warns\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1184, 48],
+      "id": "96c6fe37-9df7-4576-8a98-8a0705ccfa52",
+      "name": "Format Output OK 2"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "const d = $json.data || {};\nconst fn = $json.fileName || '';\nconst errs = JSON.stringify($json.errors || []);\nconst warns = JSON.stringify($json.warnings || []);\nconst tables_json = JSON.stringify(d.tables || []);\n\nreturn {\n  source_filename: fn,\n  product_type: d.product_type || '',\n  page_section: d.page_section || '',\n  standard: d.standard || '',\n  subtitle: d.subtitle || '',\n  descriptive_text: d.descriptive_text || d.full_text_content || '',\n  observations: d.observations || '',\n  has_table: d.has_table !== false,\n  total_order_codes: d.total_order_codes || 0,\n  tables_json: tables_json,\n  validation_status: 'REVISAO_MANUAL',\n  needs_review: true,\n  errors: errs,\n  warnings: warns\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1184, 272],
+      "id": "081db160-e1f8-4d64-8be4-15b772008c93",
+      "name": "Format Output ERRO"
+    },
+    {
+      "parameters": {
+        "operation": "upsert",
+        "table": { "__rl": true, "value": "catalogo_tecnico", "mode": "list" },
+        "columns": {
+          "mappingMode": "autoMapInputData"
+        },
+        "conflictColumns": "source_filename",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [1440, 128],
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "name": "Salvar no PostgreSQL",
+      "credentials": {
+        "postgres": {
+          "id": "CONFIGURE_ME",
+          "name": "Dynar Catalog DB"
+        }
+      }
+    },
+    {
+      "parameters": { "amount": 2, "unit": "minutes" },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1664, 128],
+      "id": "0580c3f9-b60c-4b08-a979-16c92f5f22b9",
+      "name": "Wait 2min1",
+      "webhookId": "wait2-id"
+    }
+  ],
+  "connections": {
+    "Start": { "main": [[{ "node": "Search PDFs", "type": "main", "index": 0 }]] },
+    "Search PDFs": { "main": [[{ "node": "Batch 3", "type": "main", "index": 0 }]] },
+    "Batch 3": { "main": [[], [{ "node": "Filtrar Multi-Página", "type": "main", "index": 0 }]] },
+    "Filtrar Multi-Página": { "main": [
+      [{ "node": "Download file", "type": "main", "index": 0 }],
+      [{ "node": "Batch 3", "type": "main", "index": 0 }]
+    ]},
+    "Download file": { "main": [[{ "node": "Extract Text from PDF", "type": "main", "index": 0 }]] },
+    "Extract Text from PDF": { "main": [[{ "node": "Gemini Flash Vision", "type": "main", "index": 0 }]] },
+    "Gemini Flash Vision": { "main": [
+      [{ "node": "Validação Cruzada", "type": "main", "index": 0 }],
+      [{ "node": "Wait 2min", "type": "main", "index": 0 }]
+    ]},
+    "Validação Cruzada": { "main": [[{ "node": "Válido?", "type": "main", "index": 0 }]] },
+    "Válido?": { "main": [
+      [{ "node": "Format Output OK", "type": "main", "index": 0 }],
+      [{ "node": "Wait 2min", "type": "main", "index": 0 }]
+    ]},
+    "Format Output OK": { "main": [[{ "node": "Salvar no PostgreSQL", "type": "main", "index": 0 }]] },
+    "Wait 2min": { "main": [[{ "node": "Re-download", "type": "main", "index": 0 }]] },
+    "Re-download": { "main": [[{ "node": "Gemini Pro Re-extract", "type": "main", "index": 0 }]] },
+    "Gemini Pro Re-extract": { "main": [
+      [{ "node": "Revalidação", "type": "main", "index": 0 }],
+      [{ "node": "Format Output ERRO", "type": "main", "index": 0 }]
+    ]},
+    "Revalidação": { "main": [[{ "node": "Válido 2?", "type": "main", "index": 0 }]] },
+    "Válido 2?": { "main": [
+      [{ "node": "Format Output OK 2", "type": "main", "index": 0 }],
+      [{ "node": "Format Output ERRO", "type": "main", "index": 0 }]
+    ]},
+    "Format Output OK 2": { "main": [[{ "node": "Salvar no PostgreSQL", "type": "main", "index": 0 }]] },
+    "Format Output ERRO": { "main": [[{ "node": "Salvar no PostgreSQL", "type": "main", "index": 0 }]] },
+    "Salvar no PostgreSQL": { "main": [[{ "node": "Wait 2min1", "type": "main", "index": 0 }]] },
+    "Wait 2min1": { "main": [[{ "node": "Batch 3", "type": "main", "index": 0 }]] }
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "d5c1be1e686158128704986c8b96dfb65a421b52cf38e177cd9037bb8b11d8e0"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules/
+.next/
+.env*
+PDF/
+Whatsapp\ Image/
+*.log
+.DS_Store
+tmp/
+scratch/

@@ -1,0 +1,398 @@
+[
+  {
+    "pdf": "1-tracado-de-fio-textil.pdf",
+    "warning": "Nenhum código extraído"
+  },
+  {
+    "pdf": "1-trama-de-aco.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: SAE"
+  },
+  {
+    "pdf": "1-trama-de-fio-textil.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: SAE"
+  },
+  {
+    "pdf": "12-trancados-de-fios-de-aco.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: SAE"
+  },
+  {
+    "pdf": "2-tramas-de-aco.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: SAE"
+  },
+  {
+    "pdf": "2-tramas-de-fio-textil.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: SAE"
+  },
+  {
+    "pdf": "4-espirais-de-aco-4sp.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: DIN"
+  },
+  {
+    "pdf": "4-espirais-de-aco.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: DIN"
+  },
+  {
+    "pdf": "4-espirais-de-feio-de-aco.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: SAE"
+  },
+  {
+    "pdf": "6-esperais-de-aco.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: SAE"
+  },
+  {
+    "pdf": "adaptador-bujao.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: BSP, AASF"
+  },
+  {
+    "pdf": "adaptador-macho-roscado.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: AAMFT, BSP, DIN"
+  },
+  {
+    "pdf": "adaptador-para-solda.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: BSP, AASF"
+  },
+  {
+    "pdf": "adaptores-roscados-para-conexoes-de-medicao.pdf",
+    "warning": "Nenhum código extraído"
+  },
+  {
+    "pdf": "anilha-de-simples-cravacao.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: DIN, ISO"
+  },
+  {
+    "pdf": "bracadeira-dupla.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: TBRDPA, TRBDPA, TBRDPI, TRBDPI, TBRDBA, TRBDBA, TBRDBI, TRBDBI"
+  },
+  {
+    "pdf": "bracadeira-simples.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: TBRPA, TRBPA, TBRPI, TRBPI, TBRBA, TRBBA, TBRBI, TRBBI"
+  },
+  {
+    "pdf": "bujao-roscado-com-o-ring.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: BSP, AASF"
+  },
+  {
+    "pdf": "calculo-das-tubulacoes.pdf",
+    "warning": "Nenhum código extraído"
+  },
+  {
+    "pdf": "calculo-para-a-tubulacao.pdf",
+    "warning": "Nenhum código extraído"
+  },
+  {
+    "pdf": "compatibilidade-dos-fluidos.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: XIMA, GLP, NTERIOR"
+  },
+  {
+    "pdf": "comprimento-de-uma-mangueira-montada-com-terminais.pdf",
+    "warning": "Nenhum código extraído"
+  },
+  {
+    "pdf": "cones-para-soldar-dynar.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: DIN, ISO"
+  },
+  {
+    "pdf": "conexoes-para-medicoes-generalidades.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: DIN, XIMA, NTERIOR"
+  },
+  {
+    "pdf": "de-3-viasfuro-l-ou-t.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: NPT, BSP"
+  },
+  {
+    "pdf": "emenda-para-mangueiras-pem.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: PEM"
+  },
+  {
+    "pdf": "emenda-pem.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: PEM"
+  },
+  {
+    "pdf": "face-plana-45-graus-interlock.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: TERLOCK"
+  },
+  {
+    "pdf": "face-plana-45-graus.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: ORFS"
+  },
+  {
+    "pdf": "face-plana-90-graus-interlock.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: TERLOCK"
+  },
+  {
+    "pdf": "face-plana-90-graus.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: ORFS"
+  },
+  {
+    "pdf": "face-plana-reto-interlock.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: TERLOCK"
+  },
+  {
+    "pdf": "face-plana-reto.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: ORFS"
+  },
+  {
+    "pdf": "femea-giratorio-45-graus-bsp-30-graus-interlock.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: BSP"
+  },
+  {
+    "pdf": "femea-giratorio-45-graus-bsp-30-graus.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: BSP"
+  },
+  {
+    "pdf": "femea-giratorio-45-graus-jic-37-graus-pkj45.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: JIC"
+  },
+  {
+    "pdf": "femea-giratorio-45-graus-jic-37-graus.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: JIC"
+  },
+  {
+    "pdf": "femea-giratorio-90-graus-bsp-30-graus-interlock (1).pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: BSP"
+  },
+  {
+    "pdf": "femea-giratorio-90-graus-bsp-30-graus-interlock.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: BSP"
+  },
+  {
+    "pdf": "femea-giratorio-90-graus-bsp-30-graus.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: BSP"
+  },
+  {
+    "pdf": "femea-giratorio-90-graus-jic-37-graus-pkj90.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: JIC"
+  },
+  {
+    "pdf": "femea-giratorio-90-graus-jic-37-graus.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: JIC"
+  },
+  {
+    "pdf": "femea-giratorio-reto-bsp-30-graus-interlock.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: BSP"
+  },
+  {
+    "pdf": "femea-giratorio-reto-bsp-30-graus.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: BSP"
+  },
+  {
+    "pdf": "femea-giratorio-reto-jic-37-graus-1.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: JIC"
+  },
+  {
+    "pdf": "femea-giratorio-reto-jic-37-graus.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: JIC"
+  },
+  {
+    "pdf": "fibra-kevlar-e-capa-em-poliuretano.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: SAE"
+  },
+  {
+    "pdf": "flange-45-graus-3000-psi-cod.61.pdf",
+    "warning": "Nenhum código extraído"
+  },
+  {
+    "pdf": "flange-45-graus-6000-psi-cod.62.pdf",
+    "warning": "Nenhum código extraído"
+  },
+  {
+    "pdf": "flange-45-graus-interlock-6000-psi-cod.62.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: TERLOCK"
+  },
+  {
+    "pdf": "flange-45-graus-supercat-6000-psi-cod.62.pdf",
+    "warning": "Nenhum código extraído"
+  },
+  {
+    "pdf": "flange-90-graus-6000-psi-cod.62.pdf",
+    "warning": "Nenhum código extraído"
+  },
+  {
+    "pdf": "flange-90-graus-interlock-6000-psi-cod.62.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: TERLOCK"
+  },
+  {
+    "pdf": "flange-90-graus-supercat-6000-psi-cod.62.pdf",
+    "warning": "Nenhum código extraído"
+  },
+  {
+    "pdf": "flange-interlock-45-graus-3000-psi-cod.61.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: TERLOCK"
+  },
+  {
+    "pdf": "flange-interlock-90-graus-3000-psi-cod.61.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: TERLOCK"
+  },
+  {
+    "pdf": "flange-interlock-reto-3000-psi-cod.61.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: TERLOCK"
+  },
+  {
+    "pdf": "flange-reto-3000-psi-cod.61.pdf",
+    "warning": "Nenhum código extraído"
+  },
+  {
+    "pdf": "flange-reto-6000-psi-cod.62.pdf",
+    "warning": "Nenhum código extraído"
+  },
+  {
+    "pdf": "flange-reto-interlock-6000-psi-cod.62.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: TERLOCK"
+  },
+  {
+    "pdf": "flange-reto-supercat-6000-psi-cod.62.pdf",
+    "warning": "Nenhum código extraído"
+  },
+  {
+    "pdf": "furos-roscados-para-conexoes-de-medicao.pdf",
+    "warning": "Nenhum código extraído"
+  },
+  {
+    "pdf": "generalidades-flanges.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: DIN"
+  },
+  {
+    "pdf": "inserto-de-reforco.pdf",
+    "warning": "Nenhum código extraído"
+  },
+  {
+    "pdf": "joelho-45-graus-painel-jic-37-graus-.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: JIC, BCD"
+  },
+  {
+    "pdf": "joelho-macho-45-graus-jic-37-graus-rosca-npt.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: NPT, JIC"
+  },
+  {
+    "pdf": "joelho-macho-45-graus-orientavel-jic-37-graus-rosca-unf.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: JIC, UNF"
+  },
+  {
+    "pdf": "juntas-de-vedacao-de-cobre.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: BSP"
+  },
+  {
+    "pdf": "juntas-macias.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: DIN, BSP"
+  },
+  {
+    "pdf": "macho-fixo-interlock-jic-37-graus.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: TERLOCK"
+  },
+  {
+    "pdf": "macho-fixo-interlock-rosca-bsp.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: TERLOCK"
+  },
+  {
+    "pdf": "macho-fixo-interlock-rosca-npt.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: TERLOCK"
+  },
+  {
+    "pdf": "macho-fixo-jic-37-graus-pjm.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: JIC"
+  },
+  {
+    "pdf": "macho-fixo-jic-37-graus-pkjm.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: JIC"
+  },
+  {
+    "pdf": "macho-fixo-jic-37-graus.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: JIC"
+  },
+  {
+    "pdf": "macho-fixo-orfs-pfpm.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: ORFS"
+  },
+  {
+    "pdf": "macho-fixo-orfs.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: ORFS"
+  },
+  {
+    "pdf": "macho-fixo-rosca-bsp.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: BSP"
+  },
+  {
+    "pdf": "macho-fixo-rosca-npt.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: NPT"
+  },
+  {
+    "pdf": "ponta-tubo-interlock.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: TERLOCK"
+  },
+  {
+    "pdf": "ponta-tubo.pdf",
+    "warning": "Nenhum código extraído"
+  },
+  {
+    "pdf": "posicionamento-angular-dos-terminais-montados.pdf",
+    "warning": "Nenhum código extraído"
+  },
+  {
+    "pdf": "recomendacoes-para-a-montagem.pdf",
+    "warning": "Nenhum código extraído"
+  },
+  {
+    "pdf": "te-central-orientavel-rosca-jic-37-graus-rosca-bsp.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: BSP, JIC"
+  },
+  {
+    "pdf": "te-vertical-orientavel-lateral-jic-37-graus-rosca-unf.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: UNF, JIC"
+  },
+  {
+    "pdf": "tee-central-painel-jic-37-graus.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: JIC, AJTCC"
+  },
+  {
+    "pdf": "tee-vertical-painel-jic-37-graus.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: JIC, AJTCV"
+  },
+  {
+    "pdf": "terminal-interlock-dko-reto.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: TERLOCK"
+  },
+  {
+    "pdf": "terminal-ponta-lisa-45-graus.pdf",
+    "warning": "Nenhum código extraído"
+  },
+  {
+    "pdf": "terminal-ponta-lisa-90-graus.pdf",
+    "warning": "Nenhum código extraído"
+  },
+  {
+    "pdf": "terminal-ponta-lisa-reto.pdf",
+    "warning": "Nenhum código extraído"
+  },
+  {
+    "pdf": "terminal-prensado-dko-reto.pdf",
+    "warning": "Nenhum código extraído"
+  },
+  {
+    "pdf": "torques-de-aperto-para-bujoes-roscados.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: DIN, BSP, ISO"
+  },
+  {
+    "pdf": "tubo-de-cobre-trefilado-sem-costura.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: COSTURA"
+  },
+  {
+    "pdf": "tubo-de-poliamida-incolor-nylon-11.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: LIAMIDA, DIN"
+  },
+  {
+    "pdf": "tubo-de-polietileno.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: TPE, ETILENO"
+  },
+  {
+    "pdf": "uniao-femea-jic-37-graus-com-rosca-bsp.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: JIC, BSP"
+  },
+  {
+    "pdf": "uniao-macho-jic-37-graus-npt.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: JIC, NPT"
+  },
+  {
+    "pdf": "uniao-macho-jic-37-graus-unf.pdf",
+    "warning": "Famílias órfãs ou não localizadas no ERP: JIC, UNF"
+  }
+]

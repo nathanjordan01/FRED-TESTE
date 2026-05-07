@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Oficial - Dynar</title>
+    <style>
+        :root {
+            --dynar-primary: #1D4ED8; /* Azul Escuro / Premium */
+            --dynar-secondary: #0077B6;
+            --dynar-green: #10B981;
+            --text-main: #1F2937;
+            --text-muted: #6B7280;
+            --bg-light: #F9FAFB;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: white;
+            color: var(--text-main);
+            -webkit-print-color-adjust: exact;
+        }
+
+        /* HEADER DYNAR */
+        .header {
+            background-color: var(--dynar-primary);
+            color: white;
+            padding: 24px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 5px solid var(--dynar-green);
+        }
+
+        .header-brand h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .header-brand p {
+            margin: 4px 0 0 0;
+            font-size: 14px;
+            opacity: 0.8;
+            text-transform: uppercase;
+        }
+
+        .header-contact {
+            text-align: right;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        /* TÍTULO DO PRODUTO (DESCRIÇÃO RICA) */
+        .product-hero {
+            padding: 40px;
+            text-align: center;
+            background: linear-gradient(180deg, var(--bg-light) 0%, white 100%);
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        .product-title {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--dynar-primary);
+            margin: 0 0 10px 0;
+        }
+
+        .product-code-badge {
+            background-color: var(--dynar-secondary);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* CORPO E TABELA */
+        .content {
+            padding: 40px;
+        }
+
+        .table-container {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid #E5E7EB;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        thead {
+            background-color: var(--dynar-primary);
+            color: white;
+        }
+
+        th {
+            padding: 16px 20px;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        td {
+            padding: 16px 20px;
+            border-bottom: 1px solid #E5E7EB;
+            font-size: 15px;
+            color: var(--text-main);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--bg-light);
+        }
+
+        .code-cell {
+            font-family: monospace;
+            font-weight: bold;
+            color: var(--dynar-secondary);
+            font-size: 16px;
+        }
+
+        /* FOOTER */
+        .footer {
+            margin-top: 60px;
+            padding: 24px 40px;
+            background-color: var(--bg-light);
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-muted);
+            border-top: 1px solid #E5E7EB;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-brand">
+            <h1>DYNAR</h1>
+            <p>Automação Industrial Ltda</p>
+        </div>
+        <div class="header-contact">
+            <div>vendas@dynar.com.br</div>
+            <div>(11) 9999-9999</div>
+        </div>
+    </div>
+
+    <div class="product-hero">
+        <!-- AQUI ENTRA A DESCRIÇÃO RICA DO MOTOR -->
+        <h2 class="product-title">Joelho 90 Graus Painel Jic 37 Graus - AJJC</h2>
+        <!-- AQUI ENTRA A FAMILIA -->
+        <div class="product-code-badge">Família Oficial: AJJC</div>
+        <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto; line-height: 1.6;">
+            Componente de alta performance de acordo com os padrões JIC/BSP de fixação pesada da base de dados do sistema central.
+        </p>
+    </div>
+
+    <div class="content">
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código ERP Dynar</th>
+                        <th>Medida Padrão</th>
+                        <th>Descrição de Compatibilidade</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- O LOOPER VAI INJETAR AS LINHAS AQUI -->
+                    <tr>
+                        <td class="code-cell">XAJJC 10LX1/4 BSPT</td>
+                        <td>1/4 x 1/4</td>
+                        <td>Substitui referência antiga AJJC 4</td>
+                        <td style="color: var(--dynar-green); font-weight: bold;">Ativo 🟢</td>
+                    </tr>
+                    <tr>
+                        <td class="code-cell">XAJJC 10LX3/8 BSPT</td>
+                        <td>3/8 x 3/8</td>
+                        <td>Substitui referência antiga AJJC 6</td>
+                        <td style="color: var(--dynar-green); font-weight: bold;">Ativo 🟢</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="footer">
+        DYNAR - Catálogo Digital Processado por Inteligência Artificial (Fred IA) • Documento Atualizado com a base de dados oficial.
+    </div>
+
+</body>
+</html>

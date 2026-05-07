@@ -1,0 +1,307 @@
+{
+  "name": "My workflow 61",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -496,
+        -128
+      ],
+      "id": "ef9c3bbe-4eff-49bf-97cf-aca06fc41821",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "resource": "fileFolder",
+        "queryString": ".pdf",
+        "returnAll": true,
+        "filter": {
+          "driveId": {
+            "__rl": true,
+            "value": "My Drive",
+            "mode": "list",
+            "cachedResultName": "My Drive",
+            "cachedResultUrl": "https://drive.google.com/drive/my-drive"
+          },
+          "folderId": {
+            "__rl": true,
+            "value": "17ljYxd28b3tCUMsFgRjIyFazGz5P-K6q",
+            "mode": "id"
+          }
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -272,
+        -128
+      ],
+      "id": "1547e14a-ecd9-4d75-b3da-a7ea3d4ee42e",
+      "name": "Search files and folders",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "EuOqHuLFXtfCJBhO",
+          "name": "Google Drive account | Admin"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "options": {
+          "binaryPropertyName": "={{ $json.name }}",
+          "fileName": "={{ $json.name }}"
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        176,
+        -128
+      ],
+      "id": "d43b5dd1-1090-41be-8d75-a28f2e7b827d",
+      "name": "Download file",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "EuOqHuLFXtfCJBhO",
+          "name": "Google Drive account | Admin"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.limit",
+      "typeVersion": 1,
+      "position": [
+        -48,
+        -128
+      ],
+      "id": "dfb2c032-6614-44c5-919a-7f55048fa214",
+      "name": "Limit"
+    },
+    {
+      "parameters": {
+        "resource": "image",
+        "operation": "analyze",
+        "modelId": {
+          "__rl": true,
+          "value": "=models/gemini-2.5-flash",
+          "mode": "id"
+        },
+        "text": "=Você é um extrator especializado em catálogos industriais de conexões hidráulicas.\n\nAnalise esta página de catálogo e extraia todos os dados da tabela.\nRetorne SOMENTE JSON válido. Sem markdown, sem texto antes ou depois, sem blocos de código.\n\nSCHEMA OBRIGATÓRIO (siga exatamente esta estrutura):\n{\n  \"product_type\": \"string\",\n  \"page_section\": \"string\",\n  \"standard\": \"string\",\n  \"notes\": \"string\",\n  \"items\": [\n    {\n      \"flange_size\": \"string\",\n      \"od_mm\": number,\n      \"pb_bar\": number,\n      \"l1_approx_mm\": number,\n      \"l2_mm\": number,\n      \"s1_mm\": number,\n      \"s3_mm\": number,\n      \"weight_per_100_kg\": number,\n      \"order_code\": \"string\"\n    }\n  ]\n}\n\nREGRAS OBRIGATÓRIAS — leia com atenção:\n\n1. DECIMAIS: vírgula é separador decimal, não milhar.\n   Exemplos: 36,300 → 36.3 | 100,700 → 100.7 | 41,5 → 41.5\n   NUNCA retorne 36300 ou 1007.\n\n2. FLANGE_SIZE: quando várias linhas pertencem ao mesmo tamanho de flange,\n   repita o valor em CADA linha. Nunca deixe flange_size vazio ou null.\n   Exemplo: se \"1.1/4\"\" agrupa 4 itens, todos os 4 devem ter flange_size: \"1.1/4\\\"\"\n\n3. NÚMEROS: todos os campos numéricos devem ser type number, nunca string.\n   Correto: \"od_mm\": 15 | Errado: \"od_mm\": \"15\"\n\n4. EXTRAIA TODAS AS LINHAS: não omita nenhuma linha da tabela.\n   Conte as linhas antes de responder e confirme internamente.\n\n5. L1 é sempre maior que L2. Se encontrar o contrário, você leu errado — revise.\n\n6. ORDER_CODE: copie exatamente como está na tabela.\n   Formato esperado: \"AEUCF 15x1/2\" (letras + espaço + número + x + fração)\n\n7. WEIGHT: campo \"weight_per_100_kg\" corresponde à coluna \"kg por 100 peças\".\n   Aplique a regra de decimais: 36,300 → 36.3\n\n8. NOTES: concatene o texto do rodapé (observações, O-ring, temperatura, anilha E2).\n\n9. PAGE_SECTION: número da seção que aparece no canto da página (ex: \"8.4\").\n\n10. Se um campo não existir nesta página, use null — nunca omita a chave.\n\nRetorne apenas o JSON. Nenhuma palavra fora do JSON.",
+        "inputType": "binary",
+        "binaryPropertyName": "={{ $json.name }}",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1.2,
+      "position": [
+        400,
+        -128
+      ],
+      "id": "59b2e21b-7d63-4f17-a33b-8f75c7fa59f9",
+      "name": "Analyze an image",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "oyBniSGPd0HBDOte",
+          "name": "Google Gemini(PaLM) Api account 4"
+        }
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "resource": "image",
+        "operation": "analyze",
+        "modelId": {
+          "__rl": true,
+          "value": "=models/gemini-2.5-pro",
+          "mode": "id"
+        },
+        "text": "=Você é um extrator especializado em catálogos industriais de conexões hidráulicas.\n\nAnalise esta página de catálogo e extraia todos os dados da tabela.\nRetorne SOMENTE JSON válido. Sem markdown, sem texto antes ou depois, sem blocos de código.\n\nSCHEMA OBRIGATÓRIO (siga exatamente esta estrutura):\n{\n  \"product_type\": \"string\",\n  \"page_section\": \"string\",\n  \"standard\": \"string\",\n  \"notes\": \"string\",\n  \"items\": [\n    {\n      \"flange_size\": \"string\",\n      \"od_mm\": number,\n      \"pb_bar\": number,\n      \"l1_approx_mm\": number,\n      \"l2_mm\": number,\n      \"s1_mm\": number,\n      \"s3_mm\": number,\n      \"weight_per_100_kg\": number,\n      \"order_code\": \"string\"\n    }\n  ]\n}\n\nREGRAS OBRIGATÓRIAS — leia com atenção:\n\n1. DECIMAIS: vírgula é separador decimal, não milhar.\n   Exemplos: 36,300 → 36.3 | 100,700 → 100.7 | 41,5 → 41.5\n   NUNCA retorne 36300 ou 1007.\n\n2. FLANGE_SIZE: quando várias linhas pertencem ao mesmo tamanho de flange,\n   repita o valor em CADA linha. Nunca deixe flange_size vazio ou null.\n   Exemplo: se \"1.1/4\"\" agrupa 4 itens, todos os 4 devem ter flange_size: \"1.1/4\\\"\"\n\n3. NÚMEROS: todos os campos numéricos devem ser type number, nunca string.\n   Correto: \"od_mm\": 15 | Errado: \"od_mm\": \"15\"\n\n4. EXTRAIA TODAS AS LINHAS: não omita nenhuma linha da tabela.\n   Conte as linhas antes de responder e confirme internamente.\n\n5. L1 é sempre maior que L2. Se encontrar o contrário, você leu errado — revise.\n\n6. ORDER_CODE: copie exatamente como está na tabela.\n   Formato esperado: \"AEUCF 15x1/2\" (letras + espaço + número + x + fração)\n\n7. WEIGHT: campo \"weight_per_100_kg\" corresponde à coluna \"kg por 100 peças\".\n   Aplique a regra de decimais: 36,300 → 36.3\n\n8. NOTES: concatene o texto do rodapé (observações, O-ring, temperatura, anilha E2).\n\n9. PAGE_SECTION: número da seção que aparece no canto da página (ex: \"8.4\").\n\n10. Se um campo não existir nesta página, use null — nunca omita a chave.\n\nRetorne apenas o JSON. Nenhuma palavra fora do JSON.",
+        "inputType": "binary",
+        "binaryPropertyName": "={{ $json.name }}",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1.2,
+      "position": [
+        1136,
+        0
+      ],
+      "id": "95dfea6e-a4cf-4f06-9f94-c3dd09c0d00c",
+      "name": "Analyze an image1",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "oyBniSGPd0HBDOte",
+          "name": "Google Gemini(PaLM) Api account 4"
+        }
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $('Limit').item.json.id }}",
+          "mode": "id"
+        },
+        "options": {
+          "binaryPropertyName": "={{ $('Limit').item.json.name }}",
+          "fileName": "={{ $('Limit').item.json.name }}"
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        912,
+        0
+      ],
+      "id": "ce5d686e-b1aa-4b20-9b4c-f85bddef8896",
+      "name": "Download file1",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "EuOqHuLFXtfCJBhO",
+          "name": "Google Drive account | Admin"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "amount": 2,
+        "unit": "minutes"
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        688,
+        0
+      ],
+      "id": "2ea16e34-7583-4c68-8490-527d205d8729",
+      "name": "Wait",
+      "webhookId": "986726cb-2700-4e71-a18d-9f6a066b06ec"
+    }
+  ],
+  "pinData": {
+    "Analyze an image": [
+      {
+        "json": {
+          "content": {
+            "parts": [
+              {
+                "text": "{\"product_type\": \"Conexão reta com flange\", \"page_section\": \"8.4\", \"standard\": \"DIN 2353 (ISO 8434-1)\", \"notes\": \"Obs.: Para solicitar a peça montada com a anilha E2, substituir E por E2 no \\\"código para pedidos\\\". O-ring de Perbunan®. Faixa de temperatura de - 25° a + 100°C. Sob solicitação disponível em Viton® (- 15° a + 200°C).\", \"items\": [{\"flange_size\": \"1/2\\\"\", \"od_mm\": 15, \"pb_bar\": 350, \"l1_approx_mm\": 56, \"l2_mm\": 41, \"s1_mm\": 24, \"s3_mm\": 27, \"weight_per_100_kg\": 36.3, \"order_code\": \"AEUCF 15x1/2\"}, {\"flange_size\": \"1/2\\\"\", \"od_mm\": 16, \"pb_bar\": 350, \"l1_approx_mm\": 60, \"l2_mm\": 41.5, \"s1_mm\": 24, \"s3_mm\": 30, \"weight_per_100_kg\": 39.6, \"order_code\": \"AEUCF 16x1/2\"}, {\"flange_size\": \"3/4\\\"\", \"od_mm\": 18, \"pb_bar\": 315, \"l1_approx_mm\": 62, \"l2_mm\": 45.5, \"s1_mm\": 30, \"s3_mm\": 32, \"weight_per_100_kg\": 59.2, \"order_code\": \"AEUCF 18x3/4\"}, {\"flange_size\": \"3/4\\\"\", \"od_mm\": 22, \"pb_bar\": 315, \"l1_approx_mm\": 62, \"l2_mm\": 45.5, \"s1_mm\": 30, \"s3_mm\": 36, \"weight_per_100_kg\": 57.4, \"order_code\": \"AEUCF 22x3/4\"}, {\"flange_size\": \"3/4\\\"\", \"od_mm\": 20, \"pb_bar\": 350, \"l1_approx_mm\": 68, \"l2_mm\": 46.5, \"s1_mm\": 30, \"s3_mm\": 36, \"weight_per_100_kg\": 64.8, \"order_code\": \"AEUCF 20x3/4\"}, {\"flange_size\": \"3/4\\\"\", \"od_mm\": 25, \"pb_bar\": 350, \"l1_approx_mm\": 69, \"l2_mm\": 45, \"s1_mm\": 30, \"s3_mm\": 46, \"weight_per_100_kg\": 75.9, \"order_code\": \"AEUCF 25x3/4\"}, {\"flange_size\": \"1\\\"\", \"od_mm\": 28, \"pb_bar\": 250, \"l1_approx_mm\": 63, \"l2_mm\": 46.5, \"s1_mm\": 36, \"s3_mm\": 41, \"weight_per_100_kg\": 73.8, \"order_code\": \"AEUCF 28x1\"}, {\"flange_size\": \"1\\\"\", \"od_mm\": 30, \"pb_bar\": 350, \"l1_approx_mm\": 76, \"l2_mm\": 49.5, \"s1_mm\": 36, \"s3_mm\": 50, \"weight_per_100_kg\": 97.4, \"order_code\": \"AEUCF 30x1\"}, {\"flange_size\": \"1\\\"\", \"od_mm\": 35, \"pb_bar\": 250, \"l1_approx_mm\": 69, \"l2_mm\": 47.5, \"s1_mm\": 41, \"s3_mm\": 50, \"weight_per_100_kg\": 100.7, \"order_code\": \"AEUCF 35x1.1/4\"}, {\"flange_size\": \"1.1/4\\\"\", \"od_mm\": 25, \"pb_bar\": 280, \"l1_approx_mm\": 72, \"l2_mm\": 48, \"s1_mm\": 41, \"s3_mm\": 46, \"weight_per_100_kg\": 118.2, \"order_code\": \"AEUCF 25x1.1/4\"}, {\"flange_size\": \"1.1/4\\\"\", \"od_mm\": 30, \"pb_bar\": 280, \"l1_approx_mm\": 75, \"l2_mm\": 48.5, \"s1_mm\": 41, \"s3_mm\": 50, \"weight_per_100_kg\": 119.0, \"order_code\": \"AEUCF 30x1.1/4\"}, {\"flange_size\": \"1.1/4\\\"\", \"od_mm\": 38, \"pb_bar\": 280, \"l1_approx_mm\": 81, \"l2_mm\": 50, \"s1_mm\": 46, \"s3_mm\": 60, \"weight_per_100_kg\": 138.0, \"order_code\": \"AEUCF 38x1.1/4\"}, {\"flange_size\": \"1.1/2\\\"\", \"od_mm\": 38, \"pb_bar\": 210, \"l1_approx_mm\": 85, \"l2_mm\": 54, \"s1_mm\": 46, \"s3_mm\": 60, \"weight_per_100_kg\": 168.0, \"order_code\": \"AEUCF 38x1.1/2\"}, {\"flange_size\": \"1.1/2\\\"\", \"od_mm\": 42, \"pb_bar\": 210, \"l1_approx_mm\": 76, \"l2_mm\": 53, \"s1_mm\": 46, \"s3_mm\": 60, \"weight_per_100_kg\": 144.0, \"order_code\": \"AEUCF 42x1.1/2\"}]}"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      }
+    ]
+  },
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Search files and folders",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search files and folders": {
+      "main": [
+        [
+          {
+            "node": "Limit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download file": {
+      "main": [
+        [
+          {
+            "node": "Analyze an image",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Limit": {
+      "main": [
+        [
+          {
+            "node": "Download file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Analyze an image": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download file1": {
+      "main": [
+        [
+          {
+            "node": "Analyze an image1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "Download file1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "c335d967-ae25-4892-af84-3d37b05bb8a9",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "d5c1be1e686158128704986c8b96dfb65a421b52cf38e177cd9037bb8b11d8e0"
+  },
+  "id": "VJBIzcfDV6N5Vhal",
+  "tags": []
+}
